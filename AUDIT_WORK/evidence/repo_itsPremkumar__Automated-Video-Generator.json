@@ -1,0 +1,48 @@
+{
+ "repo": "itsPremkumar/Automated-Video-Generator",
+ "accessed_utc": "2026-11-02T17:30:11+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/itsPremkumar%2FAutomated-Video-Generator",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2FitsPremkumar%2FAutomated-Video-Generator",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "itsPremkumar/Automated-Video-Generator",
+  "html_url": "https://github.com/itsPremkumar/Automated-Video-Generator",
+  "stargazers_count": 121,
+  "forks_count": 46,
+  "open_issues_count": 15,
+  "pushed_at": "2026-10-27T12:23:55.000Z",
+  "updated_at": "2026-11-02T02:27:15.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 79084,
+  "created_at": "2026-03-30T05:34:12.000Z",
+  "description": "Agentic AI video generator — fully autonomous text-to-video pipeline with free TTS/voice-clone, auto-editing, captions, and 20+ single-task operations. Zero-cost, MIT.",
+  "commit_stats": null
+ },
+ "depsdev": {
+  "starsCount": 120,
+  "forksCount": 42,
+  "license": "MIT",
+  "openIssuesCount": 15,
+  "scorecard_date": null,
+  "scorecard_overall": null,
+  "maintained": null
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/itsPremkumar/Automated-Video-Generator/main/LICENSE",
+  "head": "MIT License\n\nCopyright (c) 2026 Premkumar\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to wh"
+ }
+}

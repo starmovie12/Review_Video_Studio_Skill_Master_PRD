@@ -1,0 +1,12 @@
+.env
+*.key
+*.pem
+logs/
+work/
+chunk_cache/
+assets/models/
+evals/live/
+evals/reports/
+__pycache__/
+*.part
+*.part.*

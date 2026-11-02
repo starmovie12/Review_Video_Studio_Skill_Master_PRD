@@ -1,0 +1,54 @@
+{
+ "repo": "FFmpeg/FFmpeg",
+ "accessed_utc": "2026-11-02T17:39:33+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/FFmpeg%2FFFmpeg",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2FFFmpeg%2FFFmpeg",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "FFmpeg/FFmpeg",
+  "html_url": "https://github.com/FFmpeg/FFmpeg",
+  "stargazers_count": 65708,
+  "forks_count": 14409,
+  "open_issues_count": 3,
+  "pushed_at": "2026-10-25T10:11:41.000Z",
+  "updated_at": "2026-10-25T12:19:35.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "other",
+  "default_branch": "master",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 504336,
+  "created_at": "2011-04-14T14:12:38.000Z",
+  "description": "Mirror of https://git.ffmpeg.org/ffmpeg.git",
+  "commit_stats": {
+   "total_commits": 109028,
+   "total_committers": 2267,
+   "mean_commits": 48.09351565946184,
+   "dds": 0.7904299812892102,
+   "last_synced_commit": "252fc2e047297697dea78e63aa908377b47c2136"
+  }
+ },
+ "depsdev": {
+  "starsCount": 66005,
+  "forksCount": 14453,
+  "license": "non-standard",
+  "openIssuesCount": 3,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 5.2,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/master/LICENSE.md",
+  "head": "# License\n\nMost files in FFmpeg are under the GNU Lesser General Public License version 2.1\nor later (LGPL v2.1+). Read the file `COPYING.LGPLv2.1` for details. Some other\nfiles have MIT/X11/BSD-style licenses. In combination the LGPL v2.1+ applies to\nFFmpeg.\n\nSome optional parts of FFmpeg are licensed under the GNU General Public License\nversion 2 or later (GPL v2+). See the file `COPYING.GPLv2` "
+ }
+}

@@ -1,0 +1,16 @@
+npm warn deprecated puppeteer@23.11.1: < 24.15.0 is no longer supported
+Found 8 mermaid charts in Markdown input
+ ✅ ./out-8.svg
+ ✅ ./out-7.svg
+ ✅ ./out-3.svg
+ ✅ ./out-6.svg
+ ✅ ./out-2.svg
+ ✅ ./out-1.svg
+ ✅ ./out-5.svg
+ ✅ ./out-4.svg
+ ✅ out.md
+npm notice
+npm notice New major version of npm available! 10.9.9 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

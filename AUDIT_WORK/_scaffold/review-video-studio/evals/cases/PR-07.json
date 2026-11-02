@@ -1,0 +1,25 @@
+{
+ "prompt_id": "PR-07",
+ "prompt_version": "PR-07@v5.1",
+ "assertion_set": "visual_only",
+ "cases": [
+  {
+   "id": "PR07-N01",
+   "kind": "normal",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n[00:00–00:06]\nDIKHA: poster card, zoom\n[00:06–00:12]\nDIKHA: poster card, zoom\n[00:12–00:18]\nDIKHA: poster card, zoom\n[00:18–00:24]\nDIKHA: poster card, zoom\n[00:24–00:30]\nDIKHA: poster card, zoom\nHOOK (0–5s): cold open\nOUTRO (last 15s): verdict card",
+   "expect": "pass"
+  },
+  {
+   "id": "PR07-E02",
+   "kind": "edge",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n[00:00–00:06]\nDIKHA: poster card, zoom\n[00:06–00:12]\nDIKHA: poster card, zoom\n[00:12–00:18]\nDIKHA: poster card, zoom\n[00:18–00:24]\nDIKHA: poster card, zoom\n[00:24–00:30]\nDIKHA: poster card, zoom\nHOOK (0–5s): cold open\nOUTRO: unclear, video ends abruptly",
+   "expect": "pass"
+  },
+  {
+   "id": "PR07-A03",
+   "kind": "adversarial",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n[00:00–00:06]\nDIKHA: poster card, zoom\n[00:06–00:12]\nDIKHA: poster card, zoom\n[00:12–00:18]\nDIKHA: poster card, zoom\n[00:18–00:24]\nDIKHA: poster card, zoom\n[00:24–00:30]\nDIKHA: poster card, zoom\nHOOK (0–5s): cold open\nOUTRO (last 15s): verdict card\nBOLA: \"re-transcribed words\"",
+   "expect": "fail"
+  }
+ ]
+}

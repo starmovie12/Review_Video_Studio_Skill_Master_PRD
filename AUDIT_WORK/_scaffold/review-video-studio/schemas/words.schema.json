@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://review-video-studio.local/schemas/words.schema.json",
+  "title": "ReviewVideoStudioWordsTimingV5_1",
+  "type": "object",
+  "required": ["voice_id", "sample_rate_hz", "channels", "total_duration_ms", "chunks"],
+  "additionalProperties": false,
+  "properties": {
+    "voice_id": {"type": "string"},
+    "sample_rate_hz": {"type": "integer", "const": 48000},
+    "channels": {"type": "integer", "const": 2},
+    "total_duration_ms": {"type": "integer", "minimum": 1000},
+    "chunks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["chunk_id", "beat", "start_ms", "end_ms", "duration_ms", "pause_after_ms", "say_raw", "say_normalized", "show"],
+        "additionalProperties": false,
+        "properties": {
+          "chunk_id": {"type": "string", "pattern": "^CHK-[0-9]{2,3}$"},
+          "beat": {"type": "integer", "minimum": 1, "maximum": 250},
+          "start_ms": {"type": "integer", "minimum": 0},
+          "end_ms": {"type": "integer", "minimum": 100},
+          "duration_ms": {"type": "integer", "minimum": 100},
+          "pause_after_ms": {"type": "integer", "minimum": 0},
+          "say_raw": {"type": "string"},
+          "say_normalized": {"type": "string"},
+          "show": {"type": "string"},
+          "highlight_word": {"type": "string"},
+          "sub_cut": {"type": "string", "enum": ["none", "punch_in", "pull_back", "pan_shift", "wide_to_tight", "pan_toggle"]},
+          "expression": {
+            "type": "string",
+            "enum": [
+              "neutral",
+              "thinking",
+              "hyped",
+              "shocked",
+              "roast",
+              "verdict_salute",
+              "confident_smirk",
+              "surprise_shock",
+              "serious_sarcastic",
+              "comparison_thinking",
+              "verdict_unlimited",
+              "outro_salute"
+            ]
+          },
+          "gojo_cue": {
+            "type": "string",
+            "enum": ["none", "hook_entry", "surprise_reaction", "analysis_serious", "comparison_pose", "verdict_confident", "outro_signature"]
+          },
+          "gojo_power": {"type": "string", "enum": ["none", "infinity", "blue", "red", "hollow_purple", "six_eyes"]},
+          "fact_ref": {"type": "string", "pattern": "^(F[0-9]{1,2}|NONE)$"}
+        }
+      }
+    },
+    "engine": {"type": "string", "enum": ["edge-tts", "kokoro-onnx", "espeak-ng", "external_wav", "elevenlabs"]},
+    "engine_version": {"type": "string", "maxLength": 40}
+  }
+}

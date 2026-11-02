@@ -1,0 +1,12 @@
+# heavy / reproducible audit artefacts (see AUDIT_WORK/STATE.md to re-create)
+AUDIT_WORK/voice_lab/.venv_kokoro/
+AUDIT_WORK/voice_lab/models/
+AUDIT_WORK/_scratch/
+AUDIT_WORK/voice_lab/*.wav
+AUDIT_WORK/voice_lab/*.wav.ln.txt
+AUDIT_WORK/_scaffold/review-video-studio/logs/
+AUDIT_WORK/_scaffold/review-video-studio/evals/reports/
+AUDIT_WORK/_scaffold/review-video-studio/.pytest_cache/
+**/__pycache__/
+*.pyc
+.env

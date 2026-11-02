@@ -1,0 +1,13 @@
+Filter deesser
+  Apply de-essing to the audio.
+    Inputs:
+deesser AVOptions:
+   i                 <double>     ..F.A...... set intensity (from 0 to 1) (default 0)
+   m                 <double>     ..F.A...... set max deessing (from 0 to 1) (default 0.5)
+   f                 <double>     ..F.A...... set frequency (from 0 to 1) (default 0.5)
+   s                 <int>        ..F.A...... set output mode (from 0 to 2) (default o)
+     i               0            ..F.A...... input
+     o               1            ..F.A...... output
+     e               2            ..F.A...... ess
+
+This filter has support for timeline through the 'enable' option.

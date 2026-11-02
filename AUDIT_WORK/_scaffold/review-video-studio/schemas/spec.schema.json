@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://review-video-studio.local/schemas/spec.schema.json",
+  "title": "ReviewVideoStudioSpecV5_1",
+  "type": "object",
+  "required": ["meta", "voice", "chunks", "scenes", "endcard"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "project_slug",
+        "title",
+        "category",
+        "mode",
+        "opinion_source",
+        "aspect",
+        "width",
+        "height",
+        "fps",
+        "target_sec",
+        "style_pack",
+        "promo_disclosure"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "project_slug": {"type": "string", "pattern": "^[a-z0-9_-]{3,64}$"},
+        "format": {"type": "string", "enum": ["long_master", "short_derived", "short_standalone", "smoke"]},
+        "parent_id": {"type": "string", "maxLength": 64},
+        "title": {"type": "string", "minLength": 1, "maxLength": 120},
+        "year": {"type": "integer", "minimum": 1900, "maximum": 2100},
+        "category": {"type": "string", "enum": ["CAT-ENT", "CAT-SOFT", "CAT-PROD", "CAT-GAME", "CAT-PROMO"]},
+        "mode": {"type": "string", "enum": ["MODE-REVIEW", "MODE-PROMO"]},
+        "opinion_source": {"type": "string", "enum": ["OS-A", "OS-B", "OS-C"]},
+        "aspect": {"type": "string", "enum": ["9:16", "16:9"]},
+        "resolution_tier": {"type": "string", "enum": ["1080p_fhd", "1440p_qhd", "4k_uhd", "8k_uhd"]},
+        "width": {"type": "integer", "enum": [1080, 1440, 1920, 2160, 2560, 3840, 4320, 7680]},
+        "height": {"type": "integer", "enum": [1080, 1440, 1920, 2160, 2560, 3840, 4320, 7680]},
+        "fps": {"type": "integer", "enum": [30, 60]},
+        "hdr_10bit": {"type": "boolean"},
+        "superres_lanczos_cas": {"type": "boolean"},
+        "target_sec": {"type": "integer", "minimum": 15, "maximum": 1800},
+        "style_pack": {"type": "string", "enum": ["STL-CINEMA-HDR", "STL-DARK", "STL-NEON", "STL-CLEAN", "STL-ROAST"]},
+        "caption_script": {"type": "string", "enum": ["roman_hinglish", "devanagari", "english"]},
+        "promo_disclosure": {"type": "boolean"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"aspect": {"const": "9:16"}}},
+          "then": {
+            "anyOf": [
+              {"properties": {"width": {"const": 1080}, "height": {"const": 1920}}},
+              {"properties": {"width": {"const": 1440}, "height": {"const": 2560}}},
+              {"properties": {"width": {"const": 2160}, "height": {"const": 3840}}},
+              {"properties": {"width": {"const": 4320}, "height": {"const": 7680}}}
+            ]
+          }
+        },
+        {
+          "if": {"properties": {"aspect": {"const": "16:9"}}},
+          "then": {
+            "anyOf": [
+              {"properties": {"width": {"const": 1920}, "height": {"const": 1080}}},
+              {"properties": {"width": {"const": 2560}, "height": {"const": 1440}}},
+              {"properties": {"width": {"const": 3840}, "height": {"const": 2160}}},
+              {"properties": {"width": {"const": 7680}, "height": {"const": 4320}}}
+            ]
+          }
+        },
+        {
+          "if": {"required": ["resolution_tier"], "properties": {"resolution_tier": {"const": "1080p_fhd"}}},
+          "then": {
+            "anyOf": [
+              {"properties": {"width": {"const": 1920}, "height": {"const": 1080}}},
+              {"properties": {"width": {"const": 1080}, "height": {"const": 1920}}}
+            ]
+          }
+        },
+        {
+          "if": {"required": ["resolution_tier"], "properties": {"resolution_tier": {"const": "1440p_qhd"}}},
+          "then": {
+            "anyOf": [
+              {"properties": {"width": {"const": 2560}, "height": {"const": 1440}}},
+              {"properties": {"width": {"const": 1440}, "height": {"const": 2560}}}
+            ]
+          }
+        },
+        {
+          "if": {"required": ["resolution_tier"], "properties": {"resolution_tier": {"const": "4k_uhd"}}},
+          "then": {
+            "anyOf": [
+              {"properties": {"width": {"const": 3840}, "height": {"const": 2160}}},
+              {"properties": {"width": {"const": 2160}, "height": {"const": 3840}}}
+            ]
+          }
+        },
+        {
+          "if": {"required": ["resolution_tier"], "properties": {"resolution_tier": {"const": "8k_uhd"}}},
+          "then": {
+            "anyOf": [
+              {"properties": {"width": {"const": 7680}, "height": {"const": 4320}}},
+              {"properties": {"width": {"const": 4320}, "height": {"const": 7680}}}
+            ]
+          }
+        }
+      ]
+    },
+    "character": {
+      "type": "object",
+      "required": ["enabled", "preset_id"],
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "preset_id": {"type": "string", "enum": ["CHAR-RVS-ORIGINAL", "CHAR-GOJO-HOST", "CHAR-L-DETECTIVE", "CHAR-CONAN-SLEUTH", "CHAR-CUSTOM-SPRITE"]},
+        "host_display_name": {"type": "string", "maxLength": 32},
+        "custom_sprite_dir": {"type": "string"},
+        "position_16x9": {"type": "string", "enum": ["bottom_right", "bottom_left"]},
+        "position_9x16": {"type": "string", "enum": ["bottom_left", "bottom_right"]},
+        "asset_rights": {"type": "string", "enum": ["undeclared", "original_owned", "licensed", "permission_granted"]},
+        "rights_note": {"type": "string", "maxLength": 200}
+      }
+    },
+    "bgm": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "bed_file": {"type": "string"},
+        "duck_db": {"type": "number", "minimum": -30, "maximum": -8},
+        "license": {"type": "string", "enum": ["none", "CC0", "CC-BY", "royalty-free-licensed", "operator-owned"]},
+        "license_ref": {"type": "string", "maxLength": 200}
+      }
+    },
+    "voice": {
+      "type": "object",
+      "required": ["engine", "voice_id", "rate", "pitch", "phonetic_normalize"],
+      "additionalProperties": false,
+      "properties": {
+        "engine": {"type": "string", "enum": ["edge-tts", "kokoro-onnx", "espeak-ng", "external_wav", "elevenlabs"]},
+        "voice_id": {"type": "string", "minLength": 3},
+        "rate": {"type": "string", "pattern": "^[+-][0-9]{1,2}%$"},
+        "pitch": {"type": "string", "pattern": "^[+-][0-9]{1,2}Hz$"},
+        "phonetic_normalize": {"type": "boolean"}
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "start_ms", "end_ms", "chunk_ids"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^CH-[0-9]{2}$"},
+          "title": {"type": "string", "minLength": 2, "maxLength": 64},
+          "start_ms": {"type": "integer", "minimum": 0},
+          "end_ms": {"type": "integer", "minimum": 0},
+          "chunk_ids": {"type": "array", "items": {"type": "string", "pattern": "^CHK-[0-9]{2,3}$"}, "minItems": 1},
+          "open_loop_hook": {"type": "string", "maxLength": 140}
+        }
+      }
+    },
+    "chunks": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 600,
+      "items": {
+        "type": "object",
+        "required": ["chunk_id", "beat", "say", "show", "pause_after_ms"],
+        "additionalProperties": false,
+        "properties": {
+          "chunk_id": {"type": "string", "pattern": "^CHK-[0-9]{2,3}$"},
+          "beat": {"type": "integer", "minimum": 1, "maximum": 250},
+          "say": {"type": "string", "minLength": 2, "maxLength": 240},
+          "show": {"type": "string", "minLength": 1, "maxLength": 64},
+          "highlight_word": {"type": "string", "maxLength": 32},
+          "pause_after_ms": {"type": "integer", "minimum": 0, "maximum": 600},
+          "sub_cut": {"type": "string", "enum": ["none", "punch_in", "pull_back", "pan_shift", "wide_to_tight", "pan_toggle"]},
+          "expression": {
+            "type": "string",
+            "enum": [
+              "neutral",
+              "thinking",
+              "hyped",
+              "shocked",
+              "roast",
+              "verdict_salute",
+              "confident_smirk",
+              "surprise_shock",
+              "serious_sarcastic",
+              "comparison_thinking",
+              "verdict_unlimited",
+              "outro_salute"
+            ]
+          },
+          "gojo_cue": {
+            "type": "string",
+            "enum": ["none", "hook_entry", "surprise_reaction", "analysis_serious", "comparison_pose", "verdict_confident", "outro_signature"]
+          },
+          "gojo_power": {"type": "string", "enum": ["none", "infinity", "blue", "red", "hollow_purple", "six_eyes"]},
+          "fact_ref": {"type": "string", "pattern": "^(F[0-9]{1,2}|NONE)$"}
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 250,
+      "items": {
+        "type": "object",
+        "required": ["beat", "asset_id", "asset_file", "fallback_mode", "motion", "focus_y_ratio", "sfx"],
+        "additionalProperties": false,
+        "properties": {
+          "beat": {"type": "integer", "minimum": 1, "maximum": 250},
+          "chapter_id": {"type": "string", "pattern": "^CH-[0-9]{2}$"},
+          "asset_id": {"type": "string", "pattern": "^(AST-[PVSB][0-9]{1,2}|CARD-[A-Z0-9_]+)$"},
+          "asset_file": {"type": "string"},
+          "fallback_mode": {"type": "string", "enum": ["poster_zoom", "chapter_card", "stat_card", "split_card", "quote_card", "chart_card", "verdict_card"]},
+          "motion": {"type": "string", "enum": ["zoom_in", "zoom_out", "pan_left", "pan_right", "pan_up", "pan_down", "clip_trim"]},
+          "focus_y_ratio": {"type": "number", "minimum": 0.15, "maximum": 0.85},
+          "clip_trim_sec": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+          "top_badge": {"type": "string", "maxLength": 42},
+          "sfx": {"type": "string", "enum": ["none", "whoosh", "pop", "riser", "stamp"]},
+          "card_data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "headline": {"type": "string", "maxLength": 48},
+              "big_stat": {"type": "string", "maxLength": 24},
+              "sub_label": {"type": "string", "maxLength": 64},
+              "quote_text": {"type": "string", "maxLength": 140},
+              "quote_source": {"type": "string", "maxLength": 48},
+              "left_title": {"type": "string", "maxLength": 28},
+              "left_items": {"type": "array", "items": {"type": "string", "maxLength": 40}, "maxItems": 4},
+              "right_title": {"type": "string", "maxLength": 28},
+              "right_items": {"type": "array", "items": {"type": "string", "maxLength": 40}, "maxItems": 4},
+              "chart_bars": {
+                "type": "array",
+                "maxItems": 6,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["label", "value", "max"],
+                  "properties": {
+                    "label": {"type": "string", "maxLength": 24},
+                    "value": {"type": "number", "minimum": 0},
+                    "max": {"type": "number", "exclusiveMinimum": 0}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "repurpose": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "moments": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": ["id", "target", "src_start_ms", "src_end_ms", "chunk_ids", "new_hook_say", "new_hook_show", "new_cta_say", "new_cta_show", "reframe"],
+            "additionalProperties": false,
+            "properties": {
+              "id": {"type": "string", "pattern": "^M-[0-9]{2}$"},
+              "target": {"type": "string", "enum": ["reel", "short"]},
+              "hook_archetype": {"type": "string", "enum": ["HK-SPLIT", "HK-STAT", "HK-MYTH", "HK-TEST", "HK-SCENE"]},
+              "moment_score": {"type": "integer", "minimum": 0, "maximum": 100},
+              "src_start_ms": {"type": "integer", "minimum": 0},
+              "src_end_ms": {"type": "integer", "minimum": 1000},
+              "chunk_ids": {"type": "array", "items": {"type": "string", "pattern": "^CHK-[0-9]{2,3}$"}, "minItems": 1},
+              "new_hook_say": {"type": "string", "minLength": 2, "maxLength": 180},
+              "new_hook_show": {"type": "string", "minLength": 2, "maxLength": 64},
+              "new_cta_say": {"type": "string", "minLength": 2, "maxLength": 180},
+              "new_cta_show": {"type": "string", "minLength": 2, "maxLength": 64},
+              "reframe": {"type": "string", "enum": ["blur_fill", "relayout"]}
+            }
+          }
+        }
+      }
+    },
+    "endcard": {
+      "type": "object",
+      "required": ["enabled", "header_label", "rating_numeric", "rating_max", "verdict_stamp", "pros", "cons"],
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "header_label": {"type": "string", "maxLength": 36},
+        "rating_numeric": {"type": "number", "minimum": 0, "maximum": 10},
+        "rating_max": {"type": "integer", "enum": [5, 10]},
+        "verdict_stamp": {"type": "string", "maxLength": 28},
+        "pros": {"type": "array", "items": {"type": "string", "maxLength": 38}, "minItems": 1, "maxItems": 3},
+        "cons": {"type": "array", "items": {"type": "string", "maxLength": 38}, "minItems": 0, "maxItems": 3}
+      },
+      "allOf": [{"if": {"properties": {"rating_max": {"const": 5}}}, "then": {"properties": {"rating_numeric": {"maximum": 5}}}}]
+    },
+    "schema_version": {"type": "string", "pattern": "^5\\.1(\\.[0-9]+)?$"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"meta": {"properties": {"format": {"const": "long_master"}}, "required": ["format"]}}},
+      "then": {"required": ["chapters"], "properties": {"chapters": {"minItems": 3}}}
+    }
+  ]
+}

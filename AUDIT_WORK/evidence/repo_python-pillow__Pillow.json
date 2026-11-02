@@ -1,0 +1,54 @@
+{
+ "repo": "python-pillow/Pillow",
+ "accessed_utc": "2026-11-02T17:32:13+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/python-pillow%2FPillow",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fpython-pillow%2FPillow",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "python-pillow/Pillow",
+  "html_url": "https://github.com/python-pillow/Pillow",
+  "stargazers_count": 13930,
+  "forks_count": 2581,
+  "open_issues_count": 150,
+  "pushed_at": "2026-10-27T08:22:40.000Z",
+  "updated_at": "2026-10-27T08:22:45.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "other",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 212213,
+  "created_at": "2012-07-24T21:38:39.000Z",
+  "description": "Python Imaging Library (fork)",
+  "commit_stats": {
+   "total_commits": 13318,
+   "total_committers": 471,
+   "mean_commits": 28.276008492569,
+   "dds": 0.6136056464934675,
+   "last_synced_commit": "128f3f46d475de5ddf9859ae1e262287d0c126b6"
+  }
+ },
+ "depsdev": {
+  "starsCount": 13940,
+  "forksCount": 2583,
+  "license": "non-standard",
+  "openIssuesCount": 139,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 7.6,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/python-pillow/Pillow/main/LICENSE",
+  "head": "The Python Imaging Library (PIL) is\n\n    Copyright © 1997-2011 by Secret Labs AB\n    Copyright © 1995-2011 by Fredrik Lundh and contributors\n\nPillow is the friendly PIL fork. It is\n\n    Copyright © 2010 by Jeffrey 'Alex' Clark and contributors\n\nLike PIL, Pillow is licensed under the open source MIT-CMU License:\n\nBy obtaining, using, and/or copying this software and/or its associated\ndocumentation,"
+ }
+}

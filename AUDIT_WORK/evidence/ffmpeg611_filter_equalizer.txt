@@ -1,0 +1,30 @@
+Filter equalizer
+  Apply two-pole peaking equalization (EQ) filter.
+    slice threading supported
+equalizer AVOptions:
+   frequency         <double>     ..F.A....T. set central frequency (from 0 to 999999) (default 0)
+   f                 <double>     ..F.A....T. set central frequency (from 0 to 999999) (default 0)
+   width_type        <int>        ..F.A....T. set filter-width type (from 1 to 5) (default q)
+     h               1            ..F.A....T. Hz
+     q               3            ..F.A....T. Q-Factor
+     o               2            ..F.A....T. octave
+     s               4            ..F.A....T. slope
+     k               5            ..F.A....T. kHz
+   t                 <int>        ..F.A....T. set filter-width type (from 1 to 5) (default q)
+     h               1            ..F.A....T. Hz
+     q               3            ..F.A....T. Q-Factor
+     o               2            ..F.A....T. octave
+     s               4            ..F.A....T. slope
+     k               5            ..F.A....T. kHz
+   width             <double>     ..F.A....T. set width (from 0 to 99999) (default 1)
+   w                 <double>     ..F.A....T. set width (from 0 to 99999) (default 1)
+   gain              <double>     ..F.A....T. set gain (from -900 to 900) (default 0)
+   g                 <double>     ..F.A....T. set gain (from -900 to 900) (default 0)
+   mix               <double>     ..F.A....T. set mix (from 0 to 1) (default 1)
+   m                 <double>     ..F.A....T. set mix (from 0 to 1) (default 1)
+   channels          <string>     ..F.A....T. set channels to filter (default "all")
+   c                 <string>     ..F.A....T. set channels to filter (default "all")
+   normalize         <boolean>    ..F.A....T. normalize coefficients (default false)
+   n                 <boolean>    ..F.A....T. normalize coefficients (default false)
+   transform         <int>        ..F.A...... set transform type (from 0 to 6) (default di)
+     di              0            ..F.A...... direct form I

@@ -1,0 +1,25 @@
+{
+ "prompt_id": "PR-10B",
+ "prompt_version": "PR-10B@v5.1",
+ "assertion_set": "audit",
+ "cases": [
+  {
+   "id": "PR10B-N01",
+   "kind": "normal",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n- Opening weekend ₹10 Cr — https://example.org/a (2026-10-30)\n- IMDb 7.9 — NOT FOUND (crossed out)\n",
+   "expect": "pass"
+  },
+  {
+   "id": "PR10B-E02",
+   "kind": "edge",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n- All numbers removed — NOT FOUND\n",
+   "expect": "pass"
+  },
+  {
+   "id": "PR10B-A03",
+   "kind": "adversarial",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n- Opening weekend ₹10 Cr — https://example.org/a (2026-10-30)\n- IMDb 7.9 — NOT FOUND (crossed out)\n- Budget ₹300 Cr (memory)\n",
+   "expect": "fail"
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://review-video-studio.local/schemas/error_codes.schema.json",
+  "title": "RvsErrorRegistry",
+  "type": "object",
+  "required": ["registry_version", "format", "exit_codes", "codes"],
+  "additionalProperties": false,
+  "properties": {
+    "registry_version": {"type": "string"},
+    "prd_version": {"type": "string"},
+    "format": {"type": "string"},
+    "exit_codes": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 255}},
+    "codes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "severity", "stage", "raised_by", "trigger", "edge_case_ids", "message_hinglish", "action", "exit", "resume_hint", "test_id"],
+        "properties": {
+          "code": {"type": "string", "pattern": "^RVS_(ERR|WARN)_[0-9]{3}$"},
+          "severity": {"enum": ["ERR", "WARN"]},
+          "stage": {"type": "string"},
+          "raised_by": {"type": "string"},
+          "trigger": {"type": "string", "minLength": 5},
+          "edge_case_ids": {"type": "array", "items": {"type": "string", "pattern": "^EC-[0-9]{2}$"}},
+          "message_hinglish": {"type": "string", "minLength": 5},
+          "action": {"type": "string"},
+          "exit": {"enum": ["OK", "WARN", "INPUT", "ENV", "SERVICE", "RENDER", "QA", "TIMEOUT", "CRASH"]},
+          "resume_hint": {"type": "string"},
+          "test_id": {"type": "string", "pattern": "^(TC-[0-9]{2}|EV-[A-Z0-9-]+)$"}
+        }
+      }
+    }
+  }
+}

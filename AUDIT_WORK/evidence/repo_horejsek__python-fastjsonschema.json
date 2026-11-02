@@ -1,0 +1,54 @@
+{
+ "repo": "horejsek/python-fastjsonschema",
+ "accessed_utc": "2026-11-02T17:32:16+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/horejsek%2Fpython-fastjsonschema",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fhorejsek%2Fpython-fastjsonschema",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "horejsek/python-fastjsonschema",
+  "html_url": "https://github.com/horejsek/python-fastjsonschema",
+  "stargazers_count": 498,
+  "forks_count": 91,
+  "open_issues_count": 10,
+  "pushed_at": "2026-10-21T05:38:55.000Z",
+  "updated_at": "2026-10-24T17:59:09.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "bsd-3-clause",
+  "default_branch": "master",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 1228,
+  "created_at": "2016-09-29T20:16:31.000Z",
+  "description": "Fast JSON schema validator for Python.",
+  "commit_stats": {
+   "total_commits": 290,
+   "total_committers": 34,
+   "mean_commits": 8.529411764705882,
+   "dds": 0.6275862068965516,
+   "last_synced_commit": "720e489b9da40448a5c78052d80f4f729d45a57f"
+  }
+ },
+ "depsdev": {
+  "starsCount": 498,
+  "forksCount": 90,
+  "license": "BSD-3-Clause",
+  "openIssuesCount": 10,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 6.4,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/horejsek/python-fastjsonschema/master/LICENSE",
+  "head": "Copyright (c) 2018, Michal Horejsek\r\nAll rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification,\r\nare permitted provided that the following conditions are met:\r\n\r\n  Redistributions of source code must retain the above copyright notice, this\r\n  list of conditions and the following disclaimer.\r\n\r\n  Redistributions in binary form must reproduce the above c"
+ }
+}

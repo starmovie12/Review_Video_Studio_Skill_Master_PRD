@@ -1,0 +1,224 @@
+{
+  "schema_version": "5.1",
+  "meta": {
+    "project_slug": "smoke_test_v51_master",
+    "format": "smoke",
+    "title": "Review Studio Master Smoke v5.1 (SAMPLE DATA - not real facts)",
+    "year": 2026,
+    "category": "CAT-ENT",
+    "mode": "MODE-REVIEW",
+    "opinion_source": "OS-B",
+    "aspect": "16:9",
+    "resolution_tier": "1080p_fhd",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "hdr_10bit": false,
+    "superres_lanczos_cas": false,
+    "target_sec": 30,
+    "style_pack": "STL-CINEMA-HDR",
+    "caption_script": "roman_hinglish",
+    "promo_disclosure": false
+  },
+  "character": {
+    "enabled": true,
+    "preset_id": "CHAR-GOJO-HOST",
+    "asset_rights": "undeclared",
+    "host_display_name": "RVS HOST",
+    "position_16x9": "bottom_right",
+    "position_9x16": "bottom_left"
+  },
+  "bgm": {"enabled": false, "bed_file": "", "duck_db": -20, "license": "none"},
+  "voice": {"engine": "edge-tts", "voice_id": "hi-IN-MadhurNeural", "rate": "+6%", "pitch": "+0Hz", "phonetic_normalize": true},
+  "chapters": [
+    {
+      "id": "CH-01",
+      "title": "Critics Paradox",
+      "start_ms": 0,
+      "end_ms": 10000,
+      "chunk_ids": ["CHK-01", "CHK-02"],
+      "open_loop_hook": "Public naraz kyun hai?"
+    },
+    {
+      "id": "CH-02",
+      "title": "First Half vs Climax",
+      "start_ms": 10000,
+      "end_ms": 20000,
+      "chunk_ids": ["CHK-03", "CHK-04"],
+      "open_loop_hook": "Rating aakhir mein"
+    },
+    {
+      "id": "CH-03",
+      "title": "Final Verdict",
+      "start_ms": 20000,
+      "end_ms": 30000,
+      "chunk_ids": ["CHK-05", "CHK-06"],
+      "open_loop_hook": "Ticket lena chahiye?"
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "CHK-01",
+      "beat": 1,
+      "say": "क्रिटिक्स ने दिए 4/5 स्टार,",
+      "show": "CRITICS 4/5",
+      "highlight_word": "4/5",
+      "pause_after_ms": 55,
+      "sub_cut": "none",
+      "expression": "confident_smirk",
+      "gojo_cue": "hook_entry",
+      "gojo_power": "blue",
+      "fact_ref": "F1"
+    },
+    {
+      "chunk_id": "CHK-02",
+      "beat": 1,
+      "say": "पर पब्लिक क्यों नाराज़ है?",
+      "show": "PUBLIC NARAZ KYUN?",
+      "highlight_word": "NARAZ",
+      "pause_after_ms": 180,
+      "sub_cut": "punch_in",
+      "expression": "surprise_shock",
+      "gojo_cue": "surprise_reaction",
+      "gojo_power": "six_eyes",
+      "fact_ref": "F2"
+    },
+    {
+      "chunk_id": "CHK-03",
+      "beat": 2,
+      "say": "फर्स्ट हाफ का सस्पेंस ज़बरदस्त है,",
+      "show": "FIRST HALF ZABARDAST",
+      "highlight_word": "ZABARDAST",
+      "pause_after_ms": 55,
+      "sub_cut": "none",
+      "expression": "neutral",
+      "gojo_cue": "none",
+      "gojo_power": "none",
+      "fact_ref": "F3"
+    },
+    {
+      "chunk_id": "CHK-04",
+      "beat": 2,
+      "say": "लेकिन क्लाइमेक्स भटक जाता है।",
+      "show": "CLIMAX BHATAK GAYA",
+      "highlight_word": "CLIMAX",
+      "pause_after_ms": 320,
+      "sub_cut": "pull_back",
+      "expression": "serious_sarcastic",
+      "gojo_cue": "analysis_serious",
+      "gojo_power": "red",
+      "fact_ref": "F4"
+    },
+    {
+      "chunk_id": "CHK-05",
+      "beat": 3,
+      "say": "इसलिए हमारी रेटिंग है 3.5/5,",
+      "show": "VERDICT 3.5/5",
+      "highlight_word": "3.5/5",
+      "pause_after_ms": 180,
+      "sub_cut": "none",
+      "expression": "verdict_unlimited",
+      "gojo_cue": "verdict_confident",
+      "gojo_power": "hollow_purple",
+      "fact_ref": "NONE"
+    },
+    {
+      "chunk_id": "CHK-06",
+      "beat": 3,
+      "say": "एक बार ज़रूर देखो।",
+      "show": "ONE-TIME WATCH",
+      "highlight_word": "WATCH",
+      "pause_after_ms": 0,
+      "sub_cut": "none",
+      "expression": "outro_salute",
+      "gojo_cue": "outro_signature",
+      "gojo_power": "infinity",
+      "fact_ref": "NONE"
+    }
+  ],
+  "scenes": [
+    {
+      "beat": 1,
+      "chapter_id": "CH-01",
+      "asset_id": "AST-P1",
+      "asset_file": "AST_P1_poster.jpg",
+      "fallback_mode": "poster_zoom",
+      "motion": "zoom_in",
+      "focus_y_ratio": 0.28,
+      "top_badge": "CH 01 THE CRITICS PARADOX",
+      "sfx": "whoosh"
+    },
+    {
+      "beat": 2,
+      "chapter_id": "CH-02",
+      "asset_id": "CARD-SPLIT1",
+      "asset_file": "",
+      "fallback_mode": "split_card",
+      "motion": "pan_up",
+      "focus_y_ratio": 0.5,
+      "top_badge": "CH 02 CRITICS VS PUBLIC",
+      "sfx": "pop",
+      "card_data": {
+        "headline": "THE BIG DIVIDE",
+        "big_stat": "8.4 vs 6.1",
+        "sub_label": "Sample numbers only",
+        "left_title": "CRITICS LOVED",
+        "left_items": ["Cinematography", "Interval block"],
+        "right_title": "PUBLIC DISLIKED",
+        "right_items": ["Slow 2nd half", "Rushed ending"]
+      }
+    },
+    {
+      "beat": 3,
+      "chapter_id": "CH-03",
+      "asset_id": "CARD-VERDICT",
+      "asset_file": "",
+      "fallback_mode": "verdict_card",
+      "motion": "zoom_out",
+      "focus_y_ratio": 0.5,
+      "top_badge": "CH 03 FINAL VERDICT",
+      "sfx": "stamp"
+    }
+  ],
+  "repurpose": {
+    "moments": [
+      {
+        "id": "M-01",
+        "target": "reel",
+        "hook_archetype": "HK-SPLIT",
+        "moment_score": 82,
+        "src_start_ms": 0,
+        "src_end_ms": 10000,
+        "chunk_ids": ["CHK-01", "CHK-02"],
+        "new_hook_say": "टिकट लेने से पहले ये सच जान लो!",
+        "new_hook_show": "TICKET SE PEHLE SACH",
+        "new_cta_say": "पूरा रिव्यू यूट्यूब पर है, लिंक बायो में।",
+        "new_cta_show": "FULL REVIEW LINK IN BIO",
+        "reframe": "relayout"
+      },
+      {
+        "id": "M-02",
+        "target": "short",
+        "hook_archetype": "HK-MYTH",
+        "moment_score": 78,
+        "src_start_ms": 10000,
+        "src_end_ms": 20000,
+        "chunk_ids": ["CHK-03", "CHK-04"],
+        "new_hook_say": "सब इसे परफेक्ट बोल रहे हैं, पर रुको!",
+        "new_hook_show": "PERFECT? RUKO ZARA",
+        "new_cta_say": "पूरा पोस्टमार्टम नीचे लिंक्ड वीडियो में।",
+        "new_cta_show": "TAP RELATED VIDEO",
+        "reframe": "relayout"
+      }
+    ]
+  },
+  "endcard": {
+    "enabled": true,
+    "header_label": "INTERNET VERDICT",
+    "rating_numeric": 3.5,
+    "rating_max": 5,
+    "verdict_stamp": "ONE-TIME WATCH",
+    "pros": ["Killer first half", "Strong BGM"],
+    "cons": ["Weak climax logic", "20 min too long"]
+  }
+}

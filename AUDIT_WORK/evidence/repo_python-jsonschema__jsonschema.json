@@ -1,0 +1,54 @@
+{
+ "repo": "python-jsonschema/jsonschema",
+ "accessed_utc": "2026-11-02T17:30:10+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/python-jsonschema%2Fjsonschema",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fpython-jsonschema%2Fjsonschema",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "python-jsonschema/jsonschema",
+  "html_url": "https://github.com/python-jsonschema/jsonschema",
+  "stargazers_count": 4994,
+  "forks_count": 714,
+  "open_issues_count": 59,
+  "pushed_at": "2026-11-01T09:13:02.000Z",
+  "updated_at": "2026-11-01T09:13:03.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 4056,
+  "created_at": "2011-12-30T03:37:43.000Z",
+  "description": "An implementation of the JSON Schema specification for Python",
+  "commit_stats": {
+   "total_commits": 2373,
+   "total_committers": 119,
+   "mean_commits": "19.941176470588236",
+   "dds": 0.2996207332490518,
+   "last_synced_commit": "ba47f7f32014e67ec7dae58b924c9ebc0d89b173"
+  }
+ },
+ "depsdev": {
+  "starsCount": 4995,
+  "forksCount": 706,
+  "license": "MIT",
+  "openIssuesCount": 61,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 8.3,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/python-jsonschema/jsonschema/main/COPYING",
+  "head": "Copyright (c) 2013 Julian Berman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the So"
+ }
+}

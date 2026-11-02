@@ -1,0 +1,33 @@
+cn_id,tier,component,prd_location,qualified_choice (owner/name),decision,integration_mode,skill_id,score,reference_only_or_rejected (reason)
+CN-001,T1,Per-chunk TTS synthesis + timing,§7.2 G.2,rany2/edge-tts (12.4k★ LGPL-3.0; PyPI 2.63M/wk) + thewh1teagle/kokoro-onnx (2.8k★ MIT; PyPI 412k/wk) + hexgrad/Kokoro-82M weights (Apache-2.0; 7.3k likes 11.4M dl/mo),USE-AS-SKILL,DEPENDENCY-PINNED,OSS-SKL-01,88,"rhasspy/piper archived 2025-08 → OHF-Voice/piper1-gpl GPL-3.0, Hindi voices NC → rejected; resemble-ai/chatterbox (27.5k MIT) needs torch → Reject List; ai4bharat/IndicF5 151★ → bar fail"
+CN-002,T2,Hinglish phonetic normalizer,§7.2 #2 G.2,—,NONE-FOUND,own code (stdlib re),OSS-SKL-01,—,"savoirfairelinux/num2words 970★ last push 2025-05 (bar fail); indic-transliteration 213★ (bar fail)"
+CN-003,T3,Silence trim + 48k stereo lock,§7.2 G.2,FFmpeg/FFmpeg (65.7k★ LGPL/GPL; official) silenceremove/aformat,USE-AS-SKILL,DEPENDENCY (CLI),OSS-SKL-01,90,—
+CN-004,T1,Studio voice mastering chain (M1),App O,FFmpeg/FFmpeg filters highpass/lowshelf/equalizer/highshelf/deesser/acompressor/alimiter + loudnorm,USE-AS-SKILL,DEPENDENCY (CLI),OSS-SKL-11,90,"prompt hypothesis chain rejected by measurement"
+CN-005,T1,Two-pass loudnorm + sidechain BGM mix,§7.3 G.3,FFmpeg/FFmpeg loudnorm/sidechaincompress/amix,USE-AS-SKILL,DEPENDENCY (CLI) + PATTERN-REIMPLEMENTED,OSS-SKL-05,86,"slhck/ffmpeg-normalize 1.5k★ MIT studied as pattern; independent signal fail (PyPI 6.4k/wk <10k) → REFERENCE-ONLY"
+CN-006,T1,Multi-aspect compositing/Ken Burns/scene render/encode,§7.3 §7.5.5 G.3,FFmpeg/FFmpeg + python-pillow/Pillow (13.9k★ MIT-CMU; PyPI 160M/wk),USE-AS-SKILL,DEPENDENCY-PINNED + PATTERN-REIMPLEMENTED,OSS-SKL-02,87,"harry0703/MoneyPrinterTurbo 135.8k★ MIT studied as pattern; independent signal NOT-VERIFIED (github.com blocked) → REFERENCE-ONLY"
+CN-007,T2,ASS captions writer + vector stars,§7.4 G.3,libass/libass (1.19k★ ISC; required by FFmpeg ass filter per FFmpeg docs),USE-AS-SKILL,DEPENDENCY (via FFmpeg) + stdlib writer,OSS-SKL-03,80,"tkarabela/pysubs2 445★ (<1000) → REPLACED"
+CN-008,T3,Poster palette extraction,§7.5.1 G.3,python-pillow/Pillow Image.quantize(MEDIANCUT),USE-AS-SKILL,DEPENDENCY-PINNED,OSS-SKL-04,84,"fengsp/color-thief-py 1.1k★ last push 2022-10-31 (>24 mo) → REPLACED"
+CN-009,T2,Glass data cards + cover/thumbnail renderer,§7.5.2 §7.7 G.3 G.4,python-pillow/Pillow,USE-AS-SKILL,DEPENDENCY-PINNED + own layout,OSS-SKL-04,80,—
+CN-010,T1,2D co-host rig + RMS lip-sync + cue timeline,§7.11 G.7,—,NONE-FOUND (own design on Pillow+FFmpeg),own code,OSS-SKL-06,—,"Open-LLM-VTuber/Open-LLM-VTuber 14.4k★ MIT and DanielSWolf/rhubarb-lip-sync 2.7k★ studied as patterns; independent signal NOT-VERIFIED → REFERENCE-ONLY; rotejin/MotionPNGTuber CUDA → Reject"
+CN-011,T1,Moment miner + derived audio assembly,§5.4 G.8,—,NONE-FOUND (own design),own code,OSS-SKL-07,—,"Anil-matcha/AI-Youtube-Shorts-Generator 5.7k★ MIT studied (pattern); independent signal NOT-VERIFIED → REFERENCE-ONLY; RayVentura/ShortGPT last push 2025-02-10 (>12 mo) → DROPPED"
+CN-012,T2,7-gram originality guard (+fuzzy tier),§6.3 §7.9 G.6,rapidfuzz/RapidFuzz (4.2k★ MIT; PyPI 31.7M/wk),USE-AS-SKILL,DEPENDENCY-PINNED (optional fuzzy tier; stdlib exact tier),OSS-SKL-08,85,"fuzzywuzzy GPL → rejected"
+CN-013,T2,Devanagari→Roman phonetic skeleton,§7.9 G.6,—,NONE-FOUND,own code,OSS-SKL-08,—,"indic-transliteration 213★ (bar fail)"
+CN-014,T3,Untrusted-text sanitizer,§5.2 S3 G.6,—,NONE-FOUND (policy + regex defence-in-depth),own code,OSS-SKL-08,—,"no library can neutralise prompt injection"
+CN-015,T2,JSON Schema validation,§7.1 C.7 C.8,python-jsonschema/jsonschema (5.0k★ MIT; PyPI 145M/wk),USE-AS-SKILL,DEPENDENCY-PINNED,OSS-SKL-09,90,"Termux: stdlib minimal validator fallback (RVS_WARN code)"
+CN-016,T3,Preflight probe + font resolver,§7.1 G.1,—,NONE-FOUND (stdlib + ffmpeg -filters),own code,OSS-SKL-09,—,—
+CN-017,T2,Contact sheet + 16-pt QA parsers,§6.4 §7.8 G.5,FFmpeg/FFmpeg ffprobe/blackdetect/freezedetect/ebur128/tile,USE-AS-SKILL,DEPENDENCY (CLI),OSS-SKL-09,88,"itsPremkumar/Automated-Video-Generator 121★ → DROPPED"
+CN-018,T3,Procedural SFX,§7.6 G.3,FFmpeg/FFmpeg lavfi anoisesrc/sine/aevalsrc,USE-AS-SKILL,DEPENDENCY (CLI),OSS-SKL-02,85,—
+CN-019,T3,Upload pack + chapter timestamps,§5.1 S10-L TPL-04,—,NONE-FOUND (stdlib),own code,—,—,—
+CN-020,T3,RESUME PACK / VIDEO CARD handoff,TPL-05/06,—,NONE-FOUND (template),template,—,—,"LangGraph checkpoints need server/DB → Reject List"
+CN-021,T2,Secrets loader,App H,theskumar/python-dotenv (8.9k★ BSD-3; PyPI 172M/wk),USE-AS-SKILL,DEPENDENCY-PINNED (optional) + stdlib fallback,OSS-SKL-12,86,—
+CN-022,T2,Structured logging + crash report,App I,CPython stdlib logging + json,USE-AS-SKILL,stdlib,OSS-SKL-12,90,"structlog/python-json-logger not needed (stdlib sufficient, fewer deps)"
+CN-023,T2,Error code registry loader,App J,—,NONE-FOUND (stdlib json),own code,OSS-SKL-12,—,—
+CN-024,T2,Prompt eval harness,App M,promptfoo/promptfoo (26.6k★ MIT; npm 1.30M/wk) optional live runner + own stdlib harness for CI,USE-AS-SKILL,TOOL (optional) + own harness,OSS-SKL-13,82,"deepeval/inspect evaluated by name only (not needed)"
+CN-025,T2,Test runner + CI,App N,pytest-dev/pytest (14.7k★ MIT; PyPI 219M/wk) + GitHub Actions,USE-AS-SKILL,DEPENDENCY-PINNED,OSS-SKL-13,92,—
+CN-026,T3,Mermaid validation,App Q,mermaid-js/mermaid-cli (5.1k★ MIT; npm 822k/wk),USE-AS-SKILL,TOOL (CI only),OSS-SKL-13,84,—
+CN-027,T3,Shell lint for render kit,Files 24–25,koalaman/shellcheck (40.2k★ GPL-3.0),USE-AS-SKILL,"TOOL (separate process; CI only)",OSS-SKL-13,88,—
+CN-028,T3,ZIP packager,STAGE-4,CPython zipfile,USE-AS-SKILL,stdlib,—,90,—
+CN-029,T2,Premium TTS adapter,App O.4,ElevenLabs REST API (official docs) via stdlib urllib,USE-AS-SKILL (official API),own code,OSS-SKL-11,—,"vendor SDK not needed (one POST)"
+CN-030,T2,RP-4 / PC fallback compositor + motion curves,§10 #33 F2,Zulko/moviepy (15.1k★ MIT; PyPI 1.35M/wk) optional; remotion-dev/remotion (69.8k★ Remotion licence; npm 3.6M/wk) TECHNIQUE-ONLY,USE-AS-SKILL / TECHNIQUE-ONLY,optional DEPENDENCY / clean-room curves,OSS-SKL-10,80,—
+CN-031,T3,Cost model calculator,App L,—,NONE-FOUND (stdlib),own code,—,—,—
+CN-032,T3,Floor offline TTS,§7.2,espeak-ng/espeak-ng (7.0k★ GPL-3.0),USE-AS-SKILL,DEPENDENCY (separate process),OSS-SKL-01,78,"robotic quality; floor only"
