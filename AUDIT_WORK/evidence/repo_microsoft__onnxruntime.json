@@ -1,0 +1,54 @@
+{
+ "repo": "microsoft/onnxruntime",
+ "accessed_utc": "2026-11-02T17:39:41+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/microsoft%2Fonnxruntime",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fmicrosoft%2Fonnxruntime",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "microsoft/onnxruntime",
+  "html_url": "https://github.com/microsoft/onnxruntime",
+  "stargazers_count": 22207,
+  "forks_count": 4396,
+  "open_issues_count": 1873,
+  "pushed_at": "2026-11-02T15:12:13.000Z",
+  "updated_at": "2026-11-02T15:12:58.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 1589241,
+  "created_at": "2018-11-10T02:22:53.000Z",
+  "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator",
+  "commit_stats": {
+   "total_commits": 11681,
+   "total_committers": 727,
+   "mean_commits": "16.067400275103164",
+   "dds": 0.9203835288074651,
+   "last_synced_commit": "d3ad76b2cf7911fc1304e67e53d57f4ad0bb8acc"
+  }
+ },
+ "depsdev": {
+  "starsCount": 22186,
+  "forksCount": 4380,
+  "license": "MIT",
+  "openIssuesCount": 1873,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 6.5,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/main/LICENSE",
+  "head": "MIT License\n\nCopyright (c) Microsoft Corporation\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit person"
+ }
+}

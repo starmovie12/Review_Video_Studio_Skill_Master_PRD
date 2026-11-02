@@ -1,0 +1,6 @@
+# YouTube Help — opened 2026-11-02 via WebFetch (method: page fetch + extraction)
+- https://support.google.com/youtube/answer/9884579 (chapters): "Make sure that the first timestamp you list starts with 00:00." / "Your video should have at least three timestamps listed in ascending order." / "The minimum length for video chapters is 10 seconds."
+- https://support.google.com/youtube/answer/6175006 (mid-rolls): "On monetized videos that are 8 minutes or longer, you can turn on ads during the middle of the video" (page elsewhere says "longer than 8 minutes" — ambiguity noted; PRD keeps ≥8:00 and recommends ≥8:15 margin).
+- https://support.google.com/youtube/answer/15424877 (Shorts): "You can now create YouTube Shorts up to three minutes in length." square or vertical; uploads after October 15, 2024 (standard channels).
+- https://support.google.com/youtube/answer/1722171 (upload encoding): SDR bitrates 8K 80–160 Mbps (SFR) / 120–240 (HFR); 2160p 35–45 / 53–68; 1440p 16 / 24; 1080p 8 / 12. Audio AAC-LC/Opus, 48 kHz. "YouTube recommends BT.709 as the standard color space for SDR uploads."
+- NOTE: https://support.google.com/youtube/video/13604742 (cited in PRD for chapters) is not the chapters help article; replaced by answer/9884579.

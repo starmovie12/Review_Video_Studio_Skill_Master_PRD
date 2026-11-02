@@ -1,0 +1,54 @@
+{
+ "repo": "harry0703/MoneyPrinterTurbo",
+ "accessed_utc": "2026-11-02T17:29:59+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/harry0703%2FMoneyPrinterTurbo",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fharry0703%2FMoneyPrinterTurbo",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "harry0703/MoneyPrinterTurbo",
+  "html_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+  "stargazers_count": 135796,
+  "forks_count": 21559,
+  "open_issues_count": 80,
+  "pushed_at": "2026-10-27T10:13:32.000Z",
+  "updated_at": "2026-10-27T20:16:57.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 541140,
+  "created_at": "2024-03-11T02:57:34.000Z",
+  "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+  "commit_stats": {
+   "total_commits": 257,
+   "total_committers": 22,
+   "mean_commits": "11.681818181818182",
+   "dds": 0.2996108949416343,
+   "last_synced_commit": "ee0d2371d55bf18524fd0fbebdaaf7b4db3fdd4d"
+  }
+ },
+ "depsdev": {
+  "starsCount": 135667,
+  "forksCount": 21533,
+  "license": "MIT",
+  "openIssuesCount": 79,
+  "scorecard_date": null,
+  "scorecard_overall": null,
+  "maintained": null
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/harry0703/MoneyPrinterTurbo/main/LICENSE",
+  "head": "MIT License\n\nCopyright (c) 2024 Harry\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom t"
+ }
+}

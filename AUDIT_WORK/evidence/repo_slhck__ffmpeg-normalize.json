@@ -1,0 +1,54 @@
+{
+ "repo": "slhck/ffmpeg-normalize",
+ "accessed_utc": "2026-11-02T17:30:05+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/slhck%2Fffmpeg-normalize",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fslhck%2Fffmpeg-normalize",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "slhck/ffmpeg-normalize",
+  "html_url": "https://github.com/slhck/ffmpeg-normalize",
+  "stargazers_count": 1539,
+  "forks_count": 131,
+  "open_issues_count": 1,
+  "pushed_at": "2026-10-14T10:11:17.000Z",
+  "updated_at": "2026-10-26T00:42:30.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "other",
+  "default_branch": "master",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 3913,
+  "created_at": "2014-07-31T08:55:49.000Z",
+  "description": "Audio Normalization for Python/ffmpeg",
+  "commit_stats": {
+   "total_commits": 419,
+   "total_committers": 23,
+   "mean_commits": "18.217391304347824",
+   "dds": "0.18138424821002386",
+   "last_synced_commit": "7edfe8ccf5c89c49f25fe3f99ad2ebc70ea47b9e"
+  }
+ },
+ "depsdev": {
+  "starsCount": 1539,
+  "forksCount": 131,
+  "license": "non-standard",
+  "openIssuesCount": 1,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 4.2,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/slhck/ffmpeg-normalize/master/LICENSE.md",
+  "head": "# License\n\nffmpeg-normalize, Copyright (c) Werner Robitza\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to perm"
+ }
+}

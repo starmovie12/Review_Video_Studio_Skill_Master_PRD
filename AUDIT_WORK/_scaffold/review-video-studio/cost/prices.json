@@ -1,0 +1,15 @@
+{
+  "currency": "USD",
+  "recheck_interval_days": 30,
+  "accessed": "2026-11-02",
+  "llm": {
+    "claude-opus-5-5": {"input_per_mtok": 4.00, "output_per_mtok": 20.00, "cache_read_per_mtok": 0.20, "source": "https://platform.claude.com/docs/en/about-claude/pricing"},
+    "claude-sonnet-5-5": {"input_per_mtok": 2.00, "output_per_mtok": 10.00, "cache_read_per_mtok": 0.10, "source": "https://platform.claude.com/docs/en/about-claude/pricing"}
+  },
+  "tts": {
+    "edge-tts": {"per_1k_chars": 0.0, "source": "free Microsoft Edge read-aloud endpoint via rany2/edge-tts (unofficial; ToS caveat R13)"},
+    "kokoro-onnx": {"per_1k_chars": 0.0, "source": "local (Apache-2.0 weights)"},
+    "elevenlabs-multilingual-v2": {"per_1k_chars": 0.08, "source": "https://elevenlabs.io/pricing/api"}
+  },
+  "compute": {"operator_device_per_hour": 0.0, "cloud_vm_per_hour": null, "note": "cloud VM price not sourced → set by Operator; null = excluded"}
+}

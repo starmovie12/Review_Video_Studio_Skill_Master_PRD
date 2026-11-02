@@ -1,0 +1,35 @@
+{
+ "repo": "ai4bharat/IndicF5",
+ "accessed_utc": "2026-11-02T17:32:17+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ai4bharat%2FIndicF5",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fai4bharat%2FIndicF5",
+   404
+  ]
+ },
+ "ecosystems": {
+  "full_name": "AI4Bharat/IndicF5",
+  "html_url": "https://github.com/AI4Bharat/IndicF5",
+  "stargazers_count": 151,
+  "forks_count": 70,
+  "open_issues_count": 30,
+  "pushed_at": "2025-09-24T06:20:09.000Z",
+  "updated_at": "2026-10-24T00:10:16.000Z",
+  "archived": false,
+  "fork": false,
+  "license": null,
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 4926,
+  "created_at": "2025-03-11T14:40:07.000Z",
+  "description": null,
+  "commit_stats": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "prompt_id": "PR-10A",
+ "prompt_version": "PR-10A@v5.1",
+ "assertion_set": "blueprint",
+ "cases": [
+  {
+   "id": "PR10A-N01",
+   "kind": "normal",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n\nVIDEO HEADER\nTitle: Sample | Channel: Sample | Duration: 01:00 | Language: Hinglish | URL: https://example.org/v\n[00:00–00:04]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:04–00:08]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:08–00:12]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:12–00:16]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:16–00:20]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:20–00:24]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\nTotal Covered Range: 00:00 to 01:00",
+   "expect": "pass"
+  },
+  {
+   "id": "PR10A-E02",
+   "kind": "edge",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n\nVIDEO HEADER\nTitle: Sample | Channel: Sample | Duration: 01:00 | Language: Hinglish | URL: https://example.org/v\n[00:00–00:05]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:05–00:10]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:10–00:15]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:15–00:20]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:20–00:25]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:25–00:30]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n⏸️ PAUSED AT [00:30] OF [01:00]",
+   "expect": "pass"
+  },
+  {
+   "id": "PR10A-A03",
+   "kind": "adversarial",
+   "output": "SYNTHETIC FIXTURE (authored for harness self-test; fictional facts; example.org URLs)\n\nVIDEO HEADER\nTitle: Sample | Channel: Sample | Duration: 01:00 | Language: Hinglish | URL: https://example.org/v\n[00:00–00:20]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:20–00:40]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[00:40–01:00]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[01:00–01:20]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[01:20–01:40]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\n[01:40–02:00]\nBOLA: \"shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd shabd\"\nGAANA/SFX: [GAANA: Tum Hi Ho ~00:10, lyrics not transcribed]\nDIKHA: creator on camera, poster card, fast zoom\nTotal Covered Range: 00:00 to 01:00",
+   "expect": "fail"
+  }
+ ]
+}

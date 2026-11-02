@@ -1,0 +1,48 @@
+{
+ "repo": "promptfoo/promptfoo",
+ "accessed_utc": "2026-11-02T17:32:17+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/promptfoo%2Fpromptfoo",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fpromptfoo%2Fpromptfoo",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "promptfoo/promptfoo",
+  "html_url": "https://github.com/promptfoo/promptfoo",
+  "stargazers_count": 26560,
+  "forks_count": 2604,
+  "open_issues_count": 878,
+  "pushed_at": "2026-10-28T18:26:03.000Z",
+  "updated_at": "2026-10-28T18:23:27.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 804010,
+  "created_at": "2023-04-28T15:48:49.000Z",
+  "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration.  Used by OpenAI and Anthropic.",
+  "commit_stats": null
+ },
+ "depsdev": {
+  "starsCount": 26692,
+  "forksCount": 2627,
+  "license": "MIT",
+  "openIssuesCount": 900,
+  "scorecard_date": null,
+  "scorecard_overall": null,
+  "maintained": null
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/promptfoo/promptfoo/main/LICENSE",
+  "head": "Copyright (c) Promptfoo 2025\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Softwa"
+ }
+}

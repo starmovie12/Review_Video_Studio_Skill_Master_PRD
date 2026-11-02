@@ -1,0 +1,48 @@
+{
+ "repo": "fengsp/color-thief-py",
+ "accessed_utc": "2026-11-02T17:30:04+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/fengsp%2Fcolor-thief-py",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Ffengsp%2Fcolor-thief-py",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "fengsp/color-thief-py",
+  "html_url": "https://github.com/fengsp/color-thief-py",
+  "stargazers_count": 1109,
+  "forks_count": 122,
+  "open_issues_count": 25,
+  "pushed_at": "2022-10-31T07:43:19.000Z",
+  "updated_at": "2026-10-21T00:13:42.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "other",
+  "default_branch": "master",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 14,
+  "created_at": "2015-04-16T08:21:49.000Z",
+  "description": "Grabs the dominant color or a representative color palette from an image. Uses Python and Pillow.",
+  "commit_stats": null
+ },
+ "depsdev": {
+  "starsCount": 1109,
+  "forksCount": 122,
+  "license": "non-standard",
+  "openIssuesCount": 25,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 1.9,
+  "maintained": 0
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/fengsp/color-thief-py/master/LICENSE",
+  "head": "Copyright (c) 2015 by Shipeng Feng.\r\n\r\nSome rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without\r\nmodification, are permitted provided that the following conditions are\r\nmet:\r\n\r\n    * Redistributions of source code must retain the above copyright\r\n      notice, this list of conditions and the following disclaimer.\r\n\r\n    * Redistributions in binary form must repro"
+ }
+}

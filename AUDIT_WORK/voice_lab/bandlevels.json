@@ -1,0 +1,110 @@
+{
+ "base_female_hi.wav": {
+  "lt250": -25.75,
+  "mid": -27.35,
+  "pres2_4k": -45.75,
+  "sib5_9k": -47.29
+ },
+ "base_male_hi.wav": {
+  "lt250": -26.63,
+  "mid": -26.67,
+  "pres2_4k": -43.66,
+  "sib5_9k": -49.54
+ },
+ "base_sibilant_numbers_hi.wav": {
+  "lt250": -26.64,
+  "mid": -27.03,
+  "pres2_4k": -46.68,
+  "sib5_9k": -57.37
+ },
+ "candA_female_hi.wav": {
+  "lt250": -24.86,
+  "mid": -27.73,
+  "pres2_4k": -43.49,
+  "sib5_9k": -44.26
+ },
+ "candA_male_hi.wav": {
+  "lt250": -25.53,
+  "mid": -26.78,
+  "pres2_4k": -43.09,
+  "sib5_9k": -46.98
+ },
+ "candA_sibilant_numbers_hi.wav": {
+  "lt250": -25.66,
+  "mid": -27.29,
+  "pres2_4k": -46.24,
+  "sib5_9k": -54.81
+ },
+ "candB_female_hi.wav": {
+  "lt250": -25.1,
+  "mid": -28.43,
+  "pres2_4k": -41.54,
+  "sib5_9k": -44.1
+ },
+ "candB_male_hi.wav": {
+  "lt250": -26.01,
+  "mid": -27.35,
+  "pres2_4k": -41.13,
+  "sib5_9k": -45.1
+ },
+ "candB_sibilant_numbers_hi.wav": {
+  "lt250": -25.97,
+  "mid": -27.35,
+  "pres2_4k": -45.49,
+  "sib5_9k": -54.11
+ },
+ "candC_female_hi.wav": {
+  "lt250": -24.83,
+  "mid": -28.39,
+  "pres2_4k": -42.87,
+  "sib5_9k": -46.54
+ },
+ "candC_male_hi.wav": {
+  "lt250": -25.7,
+  "mid": -27.58,
+  "pres2_4k": -42.21,
+  "sib5_9k": -47.31
+ },
+ "candC_sibilant_numbers_hi.wav": {
+  "lt250": -25.71,
+  "mid": -27.67,
+  "pres2_4k": -46.36,
+  "sib5_9k": -55.88
+ },
+ "candD_female_hi.wav": {
+  "lt250": -25.2,
+  "mid": -28.04,
+  "pres2_4k": -43.7,
+  "sib5_9k": -46.58
+ },
+ "candD_male_hi.wav": {
+  "lt250": -25.91,
+  "mid": -27.29,
+  "pres2_4k": -43.03,
+  "sib5_9k": -48.73
+ },
+ "candD_sibilant_numbers_hi.wav": {
+  "lt250": -25.75,
+  "mid": -27.15,
+  "pres2_4k": -46.52,
+  "sib5_9k": -57.02
+ },
+ "candE_female_hi.wav": {
+  "lt250": -25.07,
+  "mid": -27.96,
+  "pres2_4k": -45.05,
+  "sib5_9k": -50.03
+ },
+ "candE_male_hi.wav": {
+  "lt250": -25.86,
+  "mid": -27.27,
+  "pres2_4k": -43.3,
+  "sib5_9k": -49.96
+ },
+ "candE_sibilant_numbers_hi.wav": {
+  "lt250": -25.74,
+  "mid": -27.15,
+  "pres2_4k": -46.72,
+  "sib5_9k": -57.65
+ }
+}

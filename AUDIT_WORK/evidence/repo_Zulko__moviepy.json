@@ -1,0 +1,50 @@
+{
+ "repo": "Zulko/moviepy",
+ "accessed_utc": "2026-11-02T17:30:11+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/Zulko%2Fmoviepy",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2FZulko%2Fmoviepy",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "Zulko/moviepy",
+  "html_url": "https://github.com/Zulko/moviepy",
+  "stargazers_count": 15073,
+  "forks_count": 2132,
+  "open_issues_count": 95,
+  "pushed_at": "2026-08-26T06:17:08.000Z",
+  "updated_at": "2026-11-01T09:27:11.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "master",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 169976,
+  "created_at": "2013-08-12T09:39:28.000Z",
+  "description": "Video editing with Python",
+  "commit_stats": {
+   "total_commits": 879,
+   "total_committers": 167,
+   "mean_commits": 5.263473053892215,
+   "dds": 0.7906712172923778,
+   "last_synced_commit": "bc8d1a831d2d1f61abfdf1779e8df95d523947a5"
+  }
+ },
+ "depsdev": {
+  "starsCount": 15053,
+  "forksCount": 2130,
+  "license": "MIT",
+  "openIssuesCount": 92,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 3.9,
+  "maintained": 2
+ }
+}

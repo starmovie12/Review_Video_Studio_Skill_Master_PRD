@@ -1,0 +1,25 @@
+{
+ "prompt_id": "PR-08B",
+ "prompt_version": "PR-08B@v5.1",
+ "assertion_set": "interview",
+ "cases": [
+  {
+   "id": "PR08B-N01",
+   "kind": "normal",
+   "output": "1. Is film ka ek sabse best scene kaunsa laga?\n2. Sabse badi kami kya lagi?\n3. 5 mein se kitne stars doge, aur kiske liye hai?",
+   "expect": "pass"
+  },
+  {
+   "id": "PR08B-E02",
+   "kind": "edge",
+   "output": "1. Is film ka ek sabse best scene kaunsa laga?\n2. Sabse badi kami kya lagi?\n3. 5 mein se kitne stars doge, aur kiske liye hai?\n(Jawab Hinglish ya English mein de sakte ho.)",
+   "expect": "pass"
+  },
+  {
+   "id": "PR08B-A03",
+   "kind": "adversarial",
+   "output": "1. Is film ka ek sabse best scene kaunsa laga?\n2. Sabse badi kami kya lagi?\n3. 5 mein se kitne stars doge, aur kiske liye hai?\nMaine dekhi, my verdict is 4/5. Kya aap agree karte ho?",
+   "expect": "fail"
+  }
+ ]
+}

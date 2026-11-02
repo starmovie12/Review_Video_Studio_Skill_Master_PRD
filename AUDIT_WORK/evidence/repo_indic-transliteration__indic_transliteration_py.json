@@ -1,0 +1,48 @@
+{
+ "repo": "indic-transliteration/indic_transliteration_py",
+ "accessed_utc": "2026-11-02T17:39:36+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/indic-transliteration%2Findic_transliteration_py",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Findic-transliteration%2Findic_transliteration_py",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "indic-transliteration/indic_transliteration_py",
+  "html_url": "https://github.com/indic-transliteration/indic_transliteration_py",
+  "stargazers_count": 213,
+  "forks_count": 42,
+  "open_issues_count": 11,
+  "pushed_at": "2026-09-08T12:13:44.000Z",
+  "updated_at": "2026-10-06T08:16:43.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "master",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 1816,
+  "created_at": "2017-06-04T03:08:18.000Z",
+  "description": "Python package for indic script transliteration",
+  "commit_stats": null
+ },
+ "depsdev": {
+  "starsCount": 214,
+  "forksCount": 43,
+  "license": "MIT",
+  "openIssuesCount": 11,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 4.6,
+  "maintained": 5
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/indic-transliteration/indic_transliteration_py/master/LICENSE.txt",
+  "head": "Copyright (c) 2016 The Python Packaging Authority (PyPA)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\nof the Software, and to permi"
+ }
+}

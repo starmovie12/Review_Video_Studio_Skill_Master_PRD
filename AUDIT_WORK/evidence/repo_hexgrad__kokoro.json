@@ -1,0 +1,48 @@
+{
+ "repo": "hexgrad/kokoro",
+ "accessed_utc": "2026-11-02T17:32:19+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/hexgrad%2Fkokoro",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fhexgrad%2Fkokoro",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "hexgrad/kokoro",
+  "html_url": "https://github.com/hexgrad/kokoro",
+  "stargazers_count": 9818,
+  "forks_count": 1098,
+  "open_issues_count": 217,
+  "pushed_at": "2025-08-06T22:28:53.000Z",
+  "updated_at": "2026-10-31T21:29:37.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "apache-2.0",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 29122,
+  "created_at": "2025-01-10T21:37:05.000Z",
+  "description": "https://hf.co/hexgrad/Kokoro-82M",
+  "commit_stats": null
+ },
+ "depsdev": {
+  "starsCount": 9757,
+  "forksCount": 1087,
+  "license": "Apache-2.0",
+  "openIssuesCount": 217,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 2.9,
+  "maintained": 0
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/hexgrad/kokoro/main/LICENSE",
+  "head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n     "
+ }
+}

@@ -1,0 +1,43 @@
+name: rvs-ci
+on:
+  push: {branches: [main]}
+  pull_request:
+  schedule: [{cron: "17 3 * * 1"}]   # weekly eval drift check (recorded fixtures)
+  workflow_dispatch:
+    inputs:
+      live_evals: {description: "Run live evals with operator key (manual)", type: boolean, default: false}
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix: {python: ["3.11", "3.12", "3.13"]}
+    env: {RVS_OFFLINE_TESTS: "1", RVS_LOG_DIR: "logs/ci"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "${{ matrix.python }}", cache: pip, cache-dependency-path: requirements-dev.txt}
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core shellcheck
+      - run: pip install -r requirements-dev.txt
+      - run: python -m compileall -q scripts
+      - run: shellcheck scripts/render_kit/*.sh
+      - run: python -m pytest -q -m "not needs_network and not needs_secret" tests
+      - run: python evals/run_evals.py
+      - run: python cost/cost_model.py --check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: "logs-${{ matrix.python }}", path: "logs/"}
+  diagrams:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: "22"}
+      - run: npx -y @mermaid-js/mermaid-cli@11.4.2 -i docs/diagrams.md -o /tmp/diagrams.md
+  live-evals:
+    if: github.event_name == 'workflow_dispatch' && inputs.live_evals
+    runs-on: ubuntu-24.04
+    environment: manual-live-evals       # requires human approval; key never printed
+    steps:
+      - uses: actions/checkout@v4
+      - run: python evals/run_evals.py --live --model "$RVS_EVAL_MODEL" --prompt-version "v5.1"
+        env: {RVS_EVAL_MODEL: "${{ vars.RVS_EVAL_MODEL }}"}

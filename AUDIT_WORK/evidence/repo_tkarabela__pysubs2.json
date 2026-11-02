@@ -1,0 +1,54 @@
+{
+ "repo": "tkarabela/pysubs2",
+ "accessed_utc": "2026-11-02T17:30:03+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/tkarabela%2Fpysubs2",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Ftkarabela%2Fpysubs2",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "tkarabela/pysubs2",
+  "html_url": "https://github.com/tkarabela/pysubs2",
+  "stargazers_count": 445,
+  "forks_count": 58,
+  "open_issues_count": 16,
+  "pushed_at": "2026-10-30T00:22:27.000Z",
+  "updated_at": "2026-10-30T00:22:30.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "master",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 3077,
+  "created_at": "2014-08-06T00:01:40.000Z",
+  "description": "A Python library for editing subtitle files",
+  "commit_stats": {
+   "total_commits": 147,
+   "total_committers": 11,
+   "mean_commits": "13.363636363636363",
+   "dds": "0.10204081632653061",
+   "last_synced_commit": "3752cff4c04301cee7914a550669e27a01f44135"
+  }
+ },
+ "depsdev": {
+  "starsCount": 447,
+  "forksCount": 58,
+  "license": "MIT",
+  "openIssuesCount": 17,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 5.9,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/tkarabela/pysubs2/master/LICENSE.txt",
+  "head": "Copyright (c) 2014-2026 Tomas Karabela\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom "
+ }
+}

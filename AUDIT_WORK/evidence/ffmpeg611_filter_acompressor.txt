@@ -1,0 +1,23 @@
+Filter acompressor
+  Audio compressor.
+    Inputs:
+acompressor/sidechaincompress AVOptions:
+   level_in          <double>     ..F.A....T. set input gain (from 0.015625 to 64) (default 1)
+   mode              <int>        ..F.A....T. set mode (from 0 to 1) (default downward)
+     downward        0            ..F.A....T.
+     upward          1            ..F.A....T.
+   threshold         <double>     ..F.A....T. set threshold (from 0.000976563 to 1) (default 0.125)
+   ratio             <double>     ..F.A....T. set ratio (from 1 to 20) (default 2)
+   attack            <double>     ..F.A....T. set attack (from 0.01 to 2000) (default 20)
+   release           <double>     ..F.A....T. set release (from 0.01 to 9000) (default 250)
+   makeup            <double>     ..F.A....T. set make up gain (from 1 to 64) (default 1)
+   knee              <double>     ..F.A....T. set knee (from 1 to 8) (default 2.82843)
+   link              <int>        ..F.A....T. set link type (from 0 to 1) (default average)
+     average         0            ..F.A....T.
+     maximum         1            ..F.A....T.
+   detection         <int>        ..F.A....T. set detection (from 0 to 1) (default rms)
+     peak            0            ..F.A....T.
+     rms             1            ..F.A....T.
+   level_sc          <double>     ..F.A....T. set sidechain gain (from 0.015625 to 64) (default 1)
+   mix               <double>     ..F.A....T. set mix (from 0 to 1) (default 1)
+

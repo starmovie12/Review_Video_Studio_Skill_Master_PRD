@@ -1,0 +1,54 @@
+{
+ "repo": "Open-LLM-VTuber/Open-LLM-VTuber",
+ "accessed_utc": "2026-11-02T17:30:06+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/Open-LLM-VTuber%2FOpen-LLM-VTuber",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2FOpen-LLM-VTuber%2FOpen-LLM-VTuber",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "Open-LLM-VTuber/Open-LLM-VTuber",
+  "html_url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+  "stargazers_count": 14411,
+  "forks_count": 1733,
+  "open_issues_count": 160,
+  "pushed_at": "2026-05-15T07:18:04.000Z",
+  "updated_at": "2026-10-27T09:38:45.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "other",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 46740,
+  "created_at": "2023-11-24T04:55:43.000Z",
+  "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D avatar running locally across platforms",
+  "commit_stats": {
+   "total_commits": 326,
+   "total_committers": 4,
+   "mean_commits": 81.5,
+   "dds": "0.012269938650306789",
+   "last_synced_commit": "fcbbac0eaed9a4e4ab6e88a9e2fac951fd7f4cad"
+  }
+ },
+ "depsdev": {
+  "starsCount": 14484,
+  "forksCount": 1745,
+  "license": "non-standard",
+  "openIssuesCount": 160,
+  "scorecard_date": null,
+  "scorecard_overall": null,
+  "maintained": null
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/Open-LLM-VTuber/Open-LLM-VTuber/main/LICENSE",
+  "head": "MIT License\n\nCopyright (c) 2025 Yi-Ting Chiu\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to"
+ }
+}

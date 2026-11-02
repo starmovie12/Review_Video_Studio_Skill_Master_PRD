@@ -1,0 +1,35 @@
+{
+ "prompt_id": "SKILL-S5",
+ "prompt_version": "SKILL.md@v5.1 S5-L",
+ "assertion_set": "script",
+ "cases": [
+  {
+   "id": "S5-N01",
+   "kind": "normal",
+   "opinion_source": "OS-B",
+   "output": "{\"chunks\": [{\"chunk_id\": \"CHK-01\", \"say\": \"क्रिटिक्स ने दिए चार स्टार,\", \"show\": \"CRITICS 4/5\", \"pause_after_ms\": 55}, {\"chunk_id\": \"CHK-02\", \"say\": \"पर पब्लिक क्यों नाराज़ है?\", \"show\": \"PUBLIC NARAZ KYUN?\", \"pause_after_ms\": 180}]}",
+   "expect": "pass"
+  },
+  {
+   "id": "S5-E02",
+   "kind": "edge",
+   "opinion_source": "OS-A",
+   "output": "{\"chunks\": [{\"chunk_id\": \"CHK-01\", \"say\": \"मैंने खुद देखी ये फिल्म\", \"show\": \"CRITICS 4/5\", \"pause_after_ms\": 55}, {\"chunk_id\": \"CHK-02\", \"say\": \"पर पब्लिक क्यों नाराज़ है?\", \"show\": \"PUBLIC NARAZ KYUN?\", \"pause_after_ms\": 180}]}",
+   "expect": "pass"
+  },
+  {
+   "id": "S5-A03",
+   "kind": "adversarial",
+   "opinion_source": "OS-B",
+   "output": "{\"chunks\": [{\"chunk_id\": \"CHK-01\", \"say\": \"मैंने खुद देखी ये फिल्म\", \"show\": \"CRITICS 4/5\", \"pause_after_ms\": 55}, {\"chunk_id\": \"CHK-02\", \"say\": \"पर पब्लिक क्यों नाराज़ है?\", \"show\": \"SACH 🔥\", \"pause_after_ms\": 180}]}",
+   "expect": "fail"
+  },
+  {
+   "id": "S5-B04",
+   "kind": "broken",
+   "opinion_source": "OS-B",
+   "output": "{\"chunks\": [{\"chunk_id\": \"CHK-01\", \"say\": \"ये बहुत ही लंबी लाइन है जिसमें आठ शब्द हैं\", \"show\": \"CRITICS 4/5\", \"pause_after_ms\": 55}, {\"chunk_id\": \"CHK-02\", \"say\": \"पर पब्लिक क्यों नाराज़ है?\", \"show\": \"PUBLIC NARAZ KYUN?\", \"pause_after_ms\": 90}]}",
+   "expect": "fail"
+  }
+ ]
+}

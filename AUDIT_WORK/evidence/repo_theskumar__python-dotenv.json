@@ -1,0 +1,54 @@
+{
+ "repo": "theskumar/python-dotenv",
+ "accessed_utc": "2026-11-02T17:32:16+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/theskumar%2Fpython-dotenv",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Ftheskumar%2Fpython-dotenv",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "theskumar/python-dotenv",
+  "html_url": "https://github.com/theskumar/python-dotenv",
+  "stargazers_count": 8907,
+  "forks_count": 617,
+  "open_issues_count": 132,
+  "pushed_at": "2026-10-01T07:34:37.000Z",
+  "updated_at": "2026-10-27T15:41:52.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "bsd-3-clause",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 1604,
+  "created_at": "2014-09-06T05:35:17.000Z",
+  "description": "Reads key-value pairs from a .env file and can set them as environment variables. It helps in developing applications following the 12-factor principles.",
+  "commit_stats": {
+   "total_commits": 362,
+   "total_committers": 102,
+   "mean_commits": 3.549019607843137,
+   "dds": 0.7928176795580111,
+   "last_synced_commit": "2b8635b79f1aa15cade0950117d4e7d12c298766"
+  }
+ },
+ "depsdev": {
+  "starsCount": 8910,
+  "forksCount": 618,
+  "license": "BSD-3-Clause",
+  "openIssuesCount": 124,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 6.3,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/theskumar/python-dotenv/main/LICENSE",
+  "head": "Copyright (c) 2014, Saurabh Kumar (python-dotenv), 2013, Ted Tieken (django-dotenv-rw), 2013, Jacob Kaplan-Moss (django-dotenv)\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n- Redistributions of source code must retain the above copyright notice,\n  this list of conditions and the following disclaimer"
+ }
+}

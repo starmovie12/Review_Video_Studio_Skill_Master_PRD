@@ -1,0 +1,54 @@
+{
+ "repo": "rapidfuzz/RapidFuzz",
+ "accessed_utc": "2026-11-02T17:30:09+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/rapidfuzz%2FRapidFuzz",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Frapidfuzz%2FRapidFuzz",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "rapidfuzz/RapidFuzz",
+  "html_url": "https://github.com/rapidfuzz/RapidFuzz",
+  "stargazers_count": 4189,
+  "forks_count": 184,
+  "open_issues_count": 37,
+  "pushed_at": "2026-10-26T00:27:23.000Z",
+  "updated_at": "2026-10-31T15:24:52.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "mit",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 7604,
+  "created_at": "2020-02-29T14:41:44.000Z",
+  "description": "Rapid fuzzy string matching in Python using various string metrics",
+  "commit_stats": {
+   "total_commits": 782,
+   "total_committers": 32,
+   "mean_commits": 24.4375,
+   "dds": 0.4194373401534527,
+   "last_synced_commit": "268a3829896899414c1ddd7d387f61ba1e9ec7eb"
+  }
+ },
+ "depsdev": {
+  "starsCount": 4185,
+  "forksCount": 184,
+  "license": "MIT",
+  "openIssuesCount": 37,
+  "scorecard_date": "2026-08-24T00:00:00Z",
+  "scorecard_overall": 5.6,
+  "maintained": 10
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/rapidfuzz/RapidFuzz/main/LICENSE",
+  "head": "Copyright © 2020-present Max Bachmann\nCopyright © 2011 Adam Cohen\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and"
+ }
+}

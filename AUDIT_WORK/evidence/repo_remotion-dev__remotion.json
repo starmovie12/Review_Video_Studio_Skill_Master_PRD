@@ -1,0 +1,54 @@
+{
+ "repo": "remotion-dev/remotion",
+ "accessed_utc": "2026-11-02T17:30:13+00:00",
+ "method": "public API (ecosyste.ms + deps.dev) + raw LICENSE",
+ "sources": {
+  "ecosystems": [
+   "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/remotion-dev%2Fremotion",
+   200
+  ],
+  "depsdev": [
+   "https://api.deps.dev/v3/projects/github.com%2Fremotion-dev%2Fremotion",
+   200
+  ]
+ },
+ "ecosystems": {
+  "full_name": "remotion-dev/remotion",
+  "html_url": "https://github.com/remotion-dev/remotion",
+  "stargazers_count": 69783,
+  "forks_count": 5737,
+  "open_issues_count": 183,
+  "pushed_at": "2026-11-01T20:05:12.000Z",
+  "updated_at": "2026-11-02T02:43:13.000Z",
+  "archived": false,
+  "fork": false,
+  "license": "other",
+  "default_branch": "main",
+  "dependent_repos_count": null,
+  "latest_tag_name": null,
+  "latest_tag_published_at": null,
+  "size": 4461254,
+  "created_at": "2020-06-23T19:49:10.000Z",
+  "description": "🎥      Make videos programmatically with React",
+  "commit_stats": {
+   "total_commits": 18395,
+   "total_committers": 274,
+   "mean_commits": 67.13503649635037,
+   "dds": "0.15487904321826584",
+   "last_synced_commit": "bee0fedba6130d6cc3253698891a1a329f5f6073"
+  }
+ },
+ "depsdev": {
+  "starsCount": 69431,
+  "forksCount": 5696,
+  "license": "non-standard",
+  "openIssuesCount": 178,
+  "scorecard_date": null,
+  "scorecard_overall": null,
+  "maintained": null
+ },
+ "license_file": {
+  "url": "https://raw.githubusercontent.com/remotion-dev/remotion/main/LICENSE.md",
+  "head": "# Remotion License\n\nIn Remotion 5.0, the license will slightly change. [View the changes here](https://github.com/remotion-dev/remotion/pull/3750).\n\n---\n\nDepending on the type of your legal entity, you are granted permission to use Remotion for your project. Individuals and small companies are allowed to use Remotion to create videos for free (even commercial), while a company license is required "
+ }
+}

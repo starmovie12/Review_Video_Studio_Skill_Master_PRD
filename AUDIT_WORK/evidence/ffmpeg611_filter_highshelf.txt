@@ -1,0 +1,30 @@
+Filter highshelf
+  Apply a high shelf filter.
+    slice threading supported
+treble/high/tiltshelf AVOptions:
+   frequency         <double>     ..F.A....T. set central frequency (from 0 to 999999) (default 3000)
+   f                 <double>     ..F.A....T. set central frequency (from 0 to 999999) (default 3000)
+   width_type        <int>        ..F.A....T. set filter-width type (from 1 to 5) (default q)
+     h               1            ..F.A....T. Hz
+     q               3            ..F.A....T. Q-Factor
+     o               2            ..F.A....T. octave
+     s               4            ..F.A....T. slope
+     k               5            ..F.A....T. kHz
+   t                 <int>        ..F.A....T. set filter-width type (from 1 to 5) (default q)
+     h               1            ..F.A....T. Hz
+     q               3            ..F.A....T. Q-Factor
+     o               2            ..F.A....T. octave
+     s               4            ..F.A....T. slope
+     k               5            ..F.A....T. kHz
+   width             <double>     ..F.A....T. set width (from 0 to 99999) (default 0.5)
+   w                 <double>     ..F.A....T. set width (from 0 to 99999) (default 0.5)
+   gain              <double>     ..F.A....T. set gain (from -900 to 900) (default 0)
+   g                 <double>     ..F.A....T. set gain (from -900 to 900) (default 0)
+   poles             <int>        ..F.A...... set number of poles (from 1 to 2) (default 2)
+   p                 <int>        ..F.A...... set number of poles (from 1 to 2) (default 2)
+   mix               <double>     ..F.A....T. set mix (from 0 to 1) (default 1)
+   m                 <double>     ..F.A....T. set mix (from 0 to 1) (default 1)
+   channels          <string>     ..F.A....T. set channels to filter (default "all")
+   c                 <string>     ..F.A....T. set channels to filter (default "all")
+   normalize         <boolean>    ..F.A....T. normalize coefficients (default false)
+   n                 <boolean>    ..F.A....T. normalize coefficients (default false)
