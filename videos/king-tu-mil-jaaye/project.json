@@ -1,0 +1,554 @@
+{
+ "title": "KING · Tu Mil Jaaye decoded",
+ "id": "king-tu-mil-jaaye",
+ "category": "movie_review",
+ "target_sec": 215,
+ "caption_script": "roman",
+ "facts": {
+  "title": "KING",
+  "year": 2026,
+  "genre": [
+   "action",
+   "thriller"
+  ],
+  "director": "Siddharth Anand",
+  "release": "24 Dec 2026 (theatres)",
+  "sources": [
+   "Operator research pack (Gemini Deep Research, 3 Nov 2026) — used as the script source",
+   "https://indianexpress.com/article/entertainment/bollywood/king-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone-arijit-ed-sheeran-10946637/ (2 Nov 2026)",
+   "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/queen-beauty-and-killer-abs-karan-johar-is-impressed-by-king-song-tu-mil-jaaye-praises-shah-rukh-khan-and-deepika-padukone/articleshow/135446488.cms (2 Nov 2026)",
+   "https://www.hindustantimes.com/entertainment/bollywood/shah-rukh-khan-deepika-padukone-romance-mixed-with-action-in-new-king-song-tu-mil-jaaye-reminds-fans-of-pathaan-and-jawan-101793581913601.html (2 Nov 2026)",
+   "https://www.wionews.com/entertainment/bollywood/king-first-song-out-on-shah-rukh-khan-s-birthday-fans-spot-suhana-khan-identify-plot-points-1793626780645 (2 Nov 2026)",
+   "https://www.mid-day.com/entertainment/bollywood-news/article/king-deepika-padukone-was-5-months-pregnant-while-filming-tu-mil-jaaye-with-srk-23658156 (2 Nov 2026)",
+   "https://www.outlookindia.com/art-entertainment/anirudh-exits-shah-rukh-khans-king-sachinjigar-take-over-full-album (31 Oct 2026)",
+   "https://songray.in/most-viewed-indian-songs-in-first-24-hours/ (3 Nov 2026: 36.3M in 24h)",
+   "https://en.wikipedia.org/wiki/King_(2026_film) (director change, budget, roles)",
+   "https://www.indiatoday.in/movies/bollywood/story/shah-rukh-khan-deepika-padukone-king-song-tu-mil-jaaye-pathaan-unreleased-footage-fans-share-mixed-reactions-3030257-2026-11-02 (2 Nov 2026)",
+   "Images: supplied by the operator (official KING poster; frames from the official Tu Mil Jaaye music video)"
+  ]
+ },
+ "assets": {
+  "poster": "assets/poster.jpg",
+  "focus": [
+   [
+    0.18,
+    0.06,
+    0.82,
+    0.52
+   ],
+   [
+    0.22,
+    0.38,
+    0.78,
+    0.78
+   ],
+   [
+    0.08,
+    0.04,
+    0.92,
+    0.66
+   ]
+  ],
+  "stills": {
+   "car": {
+    "file": "assets/srk_car.jpg",
+    "focus": [
+     [
+      0.29,
+      0.12,
+      0.49,
+      0.62
+     ],
+     [
+      0.12,
+      0.02,
+      0.72,
+      1.0
+     ],
+     [
+      0.02,
+      0.0,
+      0.62,
+      1.0
+     ]
+    ]
+   },
+   "axe": {
+    "file": "assets/srk_axe_fire.jpg",
+    "focus": [
+     [
+      0.4,
+      0.14,
+      0.58,
+      0.7
+     ],
+     [
+      0.3,
+      0.12,
+      0.68,
+      1.0
+     ],
+     [
+      0.05,
+      0.0,
+      0.5,
+      0.85
+     ]
+    ]
+   },
+   "walk": {
+    "file": "assets/srk_deepika_walk.jpg",
+    "focus": [
+     [
+      0.07,
+      0.0,
+      0.7,
+      1.0
+     ],
+     [
+      0.47,
+      0.04,
+      0.7,
+      0.66
+     ],
+     [
+      0.29,
+      0.0,
+      0.51,
+      0.68
+     ]
+    ]
+   },
+   "close": {
+    "file": "assets/srk_deepika_close.jpg",
+    "focus": [
+     [
+      0.3,
+      0.0,
+      0.9,
+      1.0
+     ],
+     [
+      0.57,
+      0.1,
+      0.84,
+      0.95
+     ],
+     [
+      0.33,
+      0.0,
+      0.58,
+      0.9
+     ]
+    ]
+   }
+  }
+ },
+ "voice": {
+  "engine": "auto",
+  "voice": "hi-IN-MadhurNeural",
+  "rate": "+18%"
+ },
+ "beats": [
+  {
+   "id": "hook",
+   "role": "hook",
+   "say": "रोमैंटिक गाना… और पहले 30 सेकंड में ही शाह रुख़ गोली चला देता है।",
+   "show": "Romantic gaana… aur pehle 30 second mein hi Shah Rukh goli chala deta hai.",
+   "archetype": "hook_slam",
+   "variant": "word_smash",
+   "hero": [
+    "goli"
+   ],
+   "image": "axe"
+  },
+  {
+   "id": "intro",
+   "role": "intro",
+   "say": "ये है किंग का पहला गाना, तू मिल जाए। सच कहूँ तो ये गाना कम, फ़िल्म का ट्रेलर ज़्यादा है। आज इसके हर सीन से फ़िल्म की कहानी खोलते हैं।",
+   "show": "Ye hai KING ka pehla gaana, Tu Mil Jaaye. Sach kahun to ye gaana kam, film ka trailer zyada hai. Aaj iske har scene se film ki kahani kholte hain.",
+   "archetype": "poster_hero",
+   "variant": "tilt_card",
+   "hero": [
+    "trailer"
+   ],
+   "captions": true,
+   "data": {
+    "title": "KING",
+    "chips": [
+     "Tu Mil Jaaye",
+     "24 Dec 2026"
+    ]
+   }
+  },
+  {
+   "id": "views",
+   "role": "stat",
+   "say": "2 नवंबर की रात ठीक 12 बजे, शाह रुख़ के इकसठवें बर्थडे पर ये गाना आया। और पहले 24 घंटे में 36 मिलियन से ज़्यादा व्यूज़।",
+   "show": "2 November ki raat theek 12 baje, Shah Rukh ke 61ve birthday par ye gaana aaya. Aur pehle 24 ghante mein 36 million se zyada views.",
+   "archetype": "stat_counter",
+   "hero": [
+    "36"
+   ],
+   "image": "car",
+   "data": {
+    "value": 36,
+    "suffix": "M+",
+    "label": "VIEWS · PEHLE 24 GHANTE",
+    "say_at": "36"
+   }
+  },
+  {
+   "id": "team",
+   "role": "list",
+   "say": "म्यूज़िक सचिन–जिगर का, लिरिक्स कुमार के। आवाज़ अरिजीत सिंह और मधुबंती बागची की। और इंग्लिश रैप, एड शीरन ने ख़ुद लिखा और ख़ुद गाया।",
+   "show": "Music Sachin–Jigar ka, lyrics Kumaar ke. Awaaz Arijit Singh aur Madhubanti Bagchi ki. Aur English rap, Ed Sheeran ne khud likha aur khud gaaya.",
+   "archetype": "list_reveal",
+   "hero": [
+    "Sheeran"
+   ],
+   "data": {
+    "title": "THE TEAM",
+    "items": [
+     "Sachin–Jigar · Music",
+     "Kumaar · Lyrics",
+     "Arijit + Madhubanti",
+     "Ed Sheeran · English rap"
+    ]
+   }
+  },
+  {
+   "id": "arijit",
+   "role": "fact",
+   "say": "और एक इमोशनल बात। अरिजीत ने ये गाना प्लेबैक से रिटायरमेंट अनाउंस करने से पहले रिकॉर्ड किया था। मतलब हो सकता है ये शाह रुख़ के लिए उनका आख़िरी गाना हो।",
+   "show": "Aur ek emotional baat. Arijit ne ye gaana playback se retirement announce karne se pehle record kiya tha. Matlab ho sakta hai ye Shah Rukh ke liye unka aakhri gaana ho.",
+   "archetype": "fact_bomb",
+   "hero": [
+    "aakhri"
+   ],
+   "image": "close",
+   "data": {
+    "big": "AAKHRI?",
+    "line": "Arijit × SRK ka last gaana?"
+   }
+  },
+  {
+   "id": "dialogue1",
+   "role": "quote",
+   "say": "गाना शुरू होता है इस लाइन से: मैं क़ातिल नहीं, आशिक़ हूँ… और निशाना मेरी माशूक़ा। यहीं से किंग का असली खेल समझ आता है।",
+   "show": "Gaana shuru hota hai is line se: Main qaatil nahi, aashiq hoon… aur nishana meri mashooqa. Yahin se KING ka asli khel samajh aata hai.",
+   "archetype": "quote_kinetic",
+   "hero": [
+    "qaatil",
+    "aashiq"
+   ],
+   "image": "walk"
+  },
+  {
+   "id": "doublelife",
+   "role": "story",
+   "say": "वीडियो में शाह रुख़ की दो ज़िंदगियाँ चलती हैं। गाड़ी के बोनट से गुलाब उठाता है, बग़ल में बंधा हुआ आदमी, गोली मारता है… और सीधा डेट पर चला जाता है। मछलियों के नीचे बंदूक़ें स्मगल करता है।",
+   "show": "Video mein Shah Rukh ki do zindagiyan chalti hain. Gaadi ke bonnet se gulaab uthata hai, bagal mein bandha hua aadmi, goli maarta hai… aur seedha date par chala jaata hai. Machhliyon ke neeche bandookein smuggle karta hai.",
+   "archetype": "story_panels",
+   "variant": "filmstrip",
+   "hero": [
+    "zindagiyan"
+   ],
+   "image": "car",
+   "data": {
+    "points": [
+     "Gulaab + goli",
+     "Seedha date",
+     "Bandookein smuggle"
+    ]
+   }
+  },
+  {
+   "id": "volleyball",
+   "role": "compare",
+   "say": "और सबसे ख़तरनाक कट: वॉलीबॉल खेलते हुए दीपिका की गर्दन मोच जाती है, शाह रुख़ प्यार से सीधी करता है… और अगले ही शॉट में एक दुश्मन की गर्दन तोड़ देता है।",
+   "show": "Aur sabse khatarnak cut: volleyball khelte hue Deepika ki gardan moch jaati hai, Shah Rukh pyaar se seedhi karta hai… aur agle hi shot mein ek dushman ki gardan tod deta hai.",
+   "archetype": "split_compare",
+   "hero": [
+    "pyaar",
+    "dushman"
+   ],
+   "image": "walk",
+   "data": {
+    "left": {
+     "title": "PYAAR",
+     "sub": "Gardan seedhi ki"
+    },
+    "right": {
+     "title": "MAUT",
+     "sub": "Gardan tod di"
+    }
+   }
+  },
+  {
+   "id": "barood",
+   "role": "line",
+   "say": "शाह रुख़ ने गाने के साथ लिखा: जहाँ बारूद की ख़ुशबू में गुलाब खिलता है। पूरी फ़िल्म का मूड इसी एक लाइन में है।",
+   "show": "Shah Rukh ne gaane ke saath likha: Jahan barood ki khushboo mein gulaab khilta hai. Poori film ka mood isi ek line mein hai.",
+   "archetype": "kinetic_line",
+   "hero": [
+    "barood",
+    "gulaab"
+   ]
+  },
+  {
+   "id": "turn",
+   "role": "line",
+   "say": "फिर गाना पलट जाता है। एक घर आग में जल रहा है, शाह रुख़ ख़ून में लथपथ चीख़ रहा है… और हाथ में कुल्हाड़ी लेकर बदला।",
+   "show": "Phir gaana palat jaata hai. Ek ghar aag mein jal raha hai, Shah Rukh khoon mein lathpath cheekh raha hai… aur haath mein kulhaadi lekar badla.",
+   "archetype": "poster_hero",
+   "variant": "full_bleed",
+   "hero": [
+    "badla"
+   ],
+   "image": "axe",
+   "captions": true,
+   "data": {
+    "title": "BADLA",
+    "chips": [
+     "Aag",
+     "Kulhaadi"
+    ]
+   }
+  },
+  {
+   "id": "dialogue2",
+   "role": "quote",
+   "say": "और आख़िरी डायलॉग: इस बार दिल में आग लगी है… अब दुनिया जलाए बिना मानेगा नहीं।",
+   "show": "Aur aakhri dialogue: Is baar dil mein aag lagi hai… ab duniya jalaye bina maanega nahi.",
+   "archetype": "quote_kinetic",
+   "hero": [
+    "aag",
+    "duniya"
+   ],
+   "image": "axe"
+  },
+  {
+   "id": "theories",
+   "role": "list",
+   "say": "अब फ़ैन्स की थ्योरीज़। पहली: दीपिका का कैरेक्टर मरता है, और वही बदले की वजह बनता है। दूसरी: जलते घर के सामने खड़ी लड़की सुहाना ख़ान है।",
+   "show": "Ab fans ki theories. Pehli: Deepika ka character marta hai, aur wahi badle ki wajah banta hai. Doosri: jalte ghar ke saamne khadi ladki Suhana Khan hai.",
+   "archetype": "list_reveal",
+   "hero": [
+    "theories"
+   ],
+   "image": "close",
+   "data": {
+    "title": "FAN THEORIES",
+    "items": [
+     "Deepika ka character → badla",
+     "Jalta ghar + Suhana?",
+     "Abhi confirm nahi"
+    ]
+   }
+  },
+  {
+   "id": "timeline_theory",
+   "role": "compare",
+   "say": "तीसरी: पोस्टर में सफ़ेद बाल, गाने में काले, यानी कहानी दो टाइम-पीरियड में चलेगी। ये सब अभी सिर्फ़ अंदाज़े हैं।",
+   "show": "Teesri: poster mein safed baal, gaane mein kaale, yaani kahani do time-period mein chalegi. Ye sab abhi sirf andaaze hain.",
+   "archetype": "split_compare",
+   "hero": [
+    "safed",
+    "kaale"
+   ],
+   "data": {
+    "left": {
+     "title": "POSTER",
+     "sub": "Safed baal"
+    },
+    "right": {
+     "title": "GAANA",
+     "sub": "Kaale baal"
+    }
+   }
+  },
+  {
+   "id": "film",
+   "role": "list",
+   "say": "अब फ़िल्म की बात। डायरेक्टर सिद्धार्थ आनंद, वही जिन्होंने पठान बनाई। कहानी सुजॉय घोष की, जो पहले ख़ुद डायरेक्ट करने वाले थे। बजट लगभग 450 करोड़।",
+   "show": "Ab film ki baat. Director Siddharth Anand, wahi jinhone Pathaan banayi. Kahani Sujoy Ghosh ki, jo pehle khud direct karne wale the. Budget lagbhag 450 crore.",
+   "archetype": "list_reveal",
+   "hero": [
+    "450"
+   ],
+   "data": {
+    "title": "KING · FILM",
+    "items": [
+     "Director: Siddharth Anand",
+     "Kahani: Sujoy Ghosh",
+     "Budget: ~₹450 crore",
+     "Release: 24 Dec 2026"
+    ]
+   }
+  },
+  {
+   "id": "cast",
+   "role": "cast",
+   "say": "शाह रुख़ एक असैसिन के रोल में बताए जा रहे हैं। सुहाना ख़ान उनकी प्रोटेजे बनके थिएट्रिकल डेब्यू कर रही हैं। और विलेन हैं अभिषेक बच्चन।",
+   "show": "Shah Rukh ek assassin ke role mein bataye ja rahe hain. Suhana Khan unki protégé banke theatrical debut kar rahi hain. Aur villain hain Abhishek Bachchan.",
+   "archetype": "cast_spotlight",
+   "variant": "portraits",
+   "hero": [
+    "villain"
+   ],
+   "image": "walk",
+   "data": {
+    "cast": [
+     {
+      "name": "Shah Rukh Khan",
+      "role": "Assassin",
+      "focus": [
+       0.29,
+       0.0,
+       0.51,
+       0.68
+      ]
+     },
+     {
+      "name": "Suhana Khan",
+      "role": "Protégé · debut"
+     },
+     {
+      "name": "Abhishek Bachchan",
+      "role": "Villain"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pair",
+   "role": "timeline",
+   "say": "शाह रुख़ और दीपिका की ये छठी फ़िल्म है: ओम शांति ओम, चेन्नई एक्सप्रेस, हैप्पी न्यू ईयर, पठान, जवान… और अब किंग।",
+   "show": "Shah Rukh aur Deepika ki ye chhathi film hai: Om Shanti Om, Chennai Express, Happy New Year, Pathaan, Jawan… aur ab KING.",
+   "archetype": "timeline",
+   "hero": [
+    "chhathi"
+   ],
+   "image": "close",
+   "data": {
+    "events": [
+     {
+      "year": "2007",
+      "label": "Om Shanti Om"
+     },
+     {
+      "year": "2013",
+      "label": "Chennai Express"
+     },
+     {
+      "year": "2023",
+      "label": "Pathaan · Jawan"
+     },
+     {
+      "year": "2026",
+      "label": "KING"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pregnant",
+   "role": "fact",
+   "say": "एक बात जो कम लोग जानते हैं: दीपिका ने ये गाना केप टाउन में शूट किया था, जब वो पाँच महीने प्रेग्नेंट थीं।",
+   "show": "Ek baat jo kam log jaante hain: Deepika ne ye gaana Cape Town mein shoot kiya tha, jab woh paanch mahine pregnant thin.",
+   "archetype": "fact_bomb",
+   "hero": [
+    "paanch"
+   ],
+   "image": "walk",
+   "data": {
+    "big": "5",
+    "line": "Mahine pregnant · Cape Town shoot"
+   }
+  },
+  {
+   "id": "music",
+   "role": "compare",
+   "say": "म्यूज़िक में भी बड़ा बदलाव हुआ। अनिरुद्ध, जिनका They Call Him King थीम 2025 में आया था, 31 अक्टूबर को फ़िल्म से अलग हो गए। अब एल्बम और बैकग्राउंड स्कोर सचिन–जिगर के पास है, पर अनिरुद्ध का थीम फ़िल्म में रहेगा।",
+   "show": "Music mein bhi bada badlaav hua. Anirudh, jinka They Call Him King theme 2025 mein aaya tha, 31 October ko film se alag ho gaye. Ab album aur background score Sachin–Jigar ke paas hai, par Anirudh ka theme film mein rahega.",
+   "archetype": "split_compare",
+   "hero": [
+    "badlaav"
+   ],
+   "image": "car",
+   "data": {
+    "left": {
+     "title": "ANIRUDH",
+     "sub": "King theme (2025)"
+    },
+    "right": {
+     "title": "SACHIN–JIGAR",
+     "sub": "Album + BG score"
+    }
+   }
+  },
+  {
+   "id": "reaction",
+   "role": "pros_cons",
+   "say": "लेकिन इंटरनेट दो हिस्सों में बँटा है। किसी को अरिजीत की आवाज़, एड का रैप और शाह रुख़–दीपिका की केमिस्ट्री पसंद आई। किसी को ये पठान 2 लगा, और कई शॉट्स रियल लोकेशन पर होकर भी CGI जैसे दिखे।",
+   "show": "Lekin internet do hisson mein banta hai. Kisi ko Arijit ki awaaz, Ed ka rap aur Shah Rukh–Deepika ki chemistry pasand aayi. Kisi ko ye Pathaan 2 laga, aur kai shots real location par hokar bhi CGI jaise dikhe.",
+   "archetype": "pros_cons",
+   "variant": "cards",
+   "hero": [
+    "internet"
+   ],
+   "data": {
+    "pros": [
+     "Arijit ki awaaz",
+     "Ed ka rap",
+     "SRK–DP chemistry"
+    ],
+    "cons": [
+     "Pathaan 2 feel",
+     "CGI jaise shots"
+    ]
+   }
+  },
+  {
+   "id": "opinion",
+   "role": "opinion",
+   "say": "मेरी राय? ये गाना कम, किंग का पौने चार मिनट का ट्रेलर ज़्यादा है।",
+   "show": "Meri raay? Ye gaana kam, KING ka paune chaar minute ka trailer zyada hai.",
+   "archetype": "quote_kinetic",
+   "hero": [
+    "trailer"
+   ],
+   "image": "axe"
+  },
+  {
+   "id": "verdict",
+   "role": "verdict",
+   "say": "अब 24 दिसंबर को पता चलेगा शाह रुख़ आशिक़ है या क़ातिल।",
+   "show": "Ab 24 December ko pata chalega Shah Rukh aashiq hai ya qaatil.",
+   "archetype": "verdict_stamp",
+   "hero": [
+    "24"
+   ],
+   "data": {
+    "verdict": "24 DEC",
+    "where": "THEATRES"
+   }
+  },
+  {
+   "id": "cta",
+   "role": "cta",
+   "say": "आपको क्या लगता है, किंग में शाह रुख़ आशिक़ है या क़ातिल? कमेंट में लिखो।",
+   "show": "Aapko kya lagta hai, KING mein Shah Rukh aashiq hai ya qaatil? Comment mein likho.",
+   "archetype": "cta_loop",
+   "hero": [
+    "qaatil"
+   ],
+   "image": "close",
+   "data": {
+    "question": "Aashiq ya qaatil?",
+    "cta": "FOLLOW"
+   }
+  }
+ ]
+}

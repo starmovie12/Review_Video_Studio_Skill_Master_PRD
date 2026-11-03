@@ -1,0 +1,62 @@
+diff --git a/rvs/audio.py b/rvs/audio.py
+index e6eda2d..d8be63d 100644
+--- a/rvs/audio.py
++++ b/rvs/audio.py
+@@ -768,7 +768,7 @@ def ducking_env(voice: np.ndarray, hop=480):
+     return np.pad(r, (0, n - len(r)), mode="edge") if 0 < len(r) < n else r
+ 
+ 
+-def loudnorm(inp: Path, outp: Path, I=-14.0, TP=-1.5, LRA=11):
++def loudnorm(inp: Path, outp: Path, I=-14.0, TP=-2.0, LRA=11):  # −2.0 leaves headroom for AAC inter-sample overshoot (QA gate −0.8)
+     r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(inp), "-af", f"loudnorm=I={I}:TP={TP}:LRA={LRA}:print_format=json",
+                         "-f", "null", "-"], capture_output=True, text=True, timeout=300).stderr
+     m = json.loads(r[r.rfind("{"): r.rfind("}") + 1])
+diff --git a/rvs/captions.py b/rvs/captions.py
+index afe66cf..35589e2 100644
+--- a/rvs/captions.py
++++ b/rvs/captions.py
+@@ -35,8 +35,10 @@ class Captioner:
+             nxt = words[i + 1] if i + 1 < len(words) else None
+             gap = (nxt["t0"] - w["t1"]) if nxt else 9
+             chars = sum(len(x["show"]) for x in cur)
++            # look-ahead: close the group before a word that would push it past ~16 chars, so long Hinglish/English
++            # word groups never have to shrink below the 64 px caption minimum
+             if (len(cur) >= maxw or chars >= 15 or gap > 0.32 or PUNCT_BREAK.search(w["show"]) or not nxt
+-                    or nxt.get("beat") != w.get("beat")):
++                    or nxt.get("beat") != w.get("beat") or chars + len(nxt["show"]) > 16):
+                 groups.append(cur)
+                 cur = []
+         out = []
+diff --git a/rvs/timeline.py b/rvs/timeline.py
+index ec4d042..b894339 100644
+--- a/rvs/timeline.py
++++ b/rvs/timeline.py
+@@ -26,6 +26,14 @@ def load_assets(project: dict, root: Path) -> dict:
+         a["focus"] = [tuple(b) for b in asd["focus"]]
+     if asd.get("product"):
+         a["product"] = Image.open(root / asd["product"]).convert("RGBA")
++    # extra operator-supplied stills: a beat with "image": "<key>" uses that still (and its focus boxes) instead of the poster
++    if asd.get("stills"):
++        a["stills"] = {}
++        for k, v in asd["stills"].items():
++            sp = (root / v["file"]) if not Path(v["file"]).is_absolute() else Path(v["file"])
++            if not sp.exists():
++                raise RvsError("ASSET_MISSING", f"still not found: {sp}")
++            a["stills"][k] = {"poster": Image.open(sp).convert("RGB"), "focus": [tuple(b) for b in v.get("focus", [])] or None}
+     return a
+ 
+ 
+@@ -68,7 +76,12 @@ class Timeline:
+             if i == 0 and arch != "hook_slam" and b.get("role") == "hook":
+                 beat["archetype"] = "hook_slam"
+             words = [dict(w, t0=round(w["t0"] - t0, 3), t1=round(w["t1"] - t0, 3)) for w in voice["words"] if w["beat"] == i]
+-            ctx = S.Ctx(dna, beat, words, t1 - t0, i, len(beats), assets, facts)
++            bassets = assets
++            if b.get("image") and b["image"] in (assets.get("stills") or {}):
++                st = assets["stills"][b["image"]]
++                bassets = {k: v for k, v in assets.items() if k != "_auto_focus"}
++                bassets.update(poster=st["poster"], focus=st["focus"])
++            ctx = S.Ctx(dna, beat, words, t1 - t0, i, len(beats), bassets, facts)
+             sc = Scene(i, t0, t1, beat["archetype"], (lambda c: (lambda scn: S.ARCH[c.beat["archetype"]]["fn"](c, scn)))(ctx),
+                          {"variant": ctx.variant, "role": b.get("role"), "id": b.get("id", f"b{i + 1}"), "captions": ctx.cap_on})
+             self.scenes.append(sc)

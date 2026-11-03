@@ -10,3 +10,7 @@ AUDIT_WORK/_scaffold/review-video-studio/.pytest_cache/
 **/__pycache__/
 *.pyc
 .env
+# video projects: keep script/project/review, not renders, work files or third-party stills
+videos/*/work/
+videos/*/out/
+videos/*/assets/
